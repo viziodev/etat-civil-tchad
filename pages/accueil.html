@@ -1,0 +1,212 @@
+
+   <my-navbar></my-navbar>
+    <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
+
+<my-sidebar>
+</my-sidebar>
+        
+        <div id="main-content" class="relative mb-5 w-full white-bg-color h-full overflow-y-auto bg-white-50 lg:ml-64 dark:bg-white-900">
+          <!-- content -->
+            <main class=" mt-2 sm:ml-64 p-2">
+             <!-- content -->
+             <div class="p-4  rounded-lg  mt-0 border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                <div class="grid grid-cols-1 gap-2 mb-4">
+                    <p class="text-sm max-w-sm text-gray-500 ">
+                        Accueil
+                      </p>
+                    <p class="text-2xl text-gray-900 dark:text-gray-900 ">
+                        Bienvenue Rachit !
+                      </p>
+                      <p class="text-sm max-w-sm">
+                        Vestibulum augue proin enim cursus montes, ante. Ultrices posuere mattis elit egestas aliquam pellentesque nisl id quis. 
+                      </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mb-4">
+                    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-700 dark:text-white">Nombre de dossiers en cours</h5>
+                        <p class="font-normal mb-2 text-xs text-gray-700 dark:text-gray-400">Dossiers en cours de traitement</p>
+                        <p class="font-bold text-xl maron-color">25</p>
+                    </a>
+                
+                    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h5 class="text-lg font-semibold tracking-tight text-gray-700 dark:text-white">Nombre de dossiers acceptés</h5>
+                        <p class="font-normal mb-2 text-xs text-gray-700 dark:text-gray-400">Dossiers acceptés après traitement</p>
+                        <p class="font-bold text-xl ">120</p>
+                    </a>
+                
+                    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h5 class="text-lg font-semibold tracking-tight text-gray-700 dark:text-white">Nombre de dossiers rejetés</h5>
+                        <p class="font-normal mb-2 text-xs text-gray-700 dark:text-gray-400">Dossiers rejetés après traitement</p>
+                        <p class="font-bold text-xl  maron-color">12</p>
+                    </a>
+                </div>
+                <div class="shadow-md sm:rounded-lg mb-4">
+                    <div class="flex p-2 items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+                        <div>
+                            <caption class="p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+                                Derniers évènements
+                                <p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+                                    12 évènements enregistrés aujourd’hui
+                                </p>
+                            </caption>
+                           </div>
+                       
+                        <div class="flex gap-2">
+                            <div class="max-w-sm mx-auto flex gap-1">
+                                <label for="countries" class="block mt-2 text-sm font-medium text-gray-900 dark:text-white">Catégorie</label>
+                                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                              
+                                  <option>Voir tout</option>
+                                  <option>Voir moins</option>
+                                  
+                                </select>
+                              </div>                                
+                <div class="max-w-sm mx-auto flex gap-1">
+                    <label for="countries" class="block mt-2 text-sm font-medium text-gray-900 dark:text-white">Catégorie</label>
+                    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                  
+                      <option>Voir tout</option>
+                      <option>Voir moins</option>
+                      
+                    </select>
+                  </div>
+                  
+                        </div>
+                
+                     
+                    </div>
+                
+                
+                    <div class="relative overflow-x-auto ">
+                   
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                           
+                           
+                            <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                       ID
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Date de création
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Nom & prénom
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Genre
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Acte
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Status
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <span class="sr-only">Acte</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        #XGY-346
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        09/12/23
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Mahmout Ben Silziari
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        M
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Mariage
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <span class="bg-yellow-100 text-yellow-200 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Pending</span>
+                    
+                                    </td>
+                                    <td class="px-6 py-4 text-right">
+                                        <span style="cursor: pointer;" class="bg-blue-100 text-yellow-200 rounded-full text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-300 dark:text-yellow-300">
+                                            +
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        #YHD-047
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        09/12/23
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Fatimah Zahra Kikan
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        F
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Divorce
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Confirmed</span>
+                    
+                                    </td>
+                    
+                                    <td class="px-6 py-4 text-right">
+                                        <span style="cursor: pointer;" class="bg-blue-100 text-blue-800 rounded-full text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                                            +
+                                        </span>
+                    
+                                        
+                                    </td>
+                                </tr>
+                               
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        #YHD-047
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        09/12/23
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Fatimah Zahra Kikan
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        F
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Divorce
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Confirmed</span>
+                    
+                                    </td>
+                    
+                                    <td class="px-6 py-4 text-right">
+                                        <span style="cursor: pointer;" class="bg-blue-100 text-blue-800 rounded-full text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                                            +
+                                        </span>
+                    
+                                        
+                                    </td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+          </main>
+           <!-- content -->
+         
+        </div>
+      
+    </div>
+
+    <!-- Optional JavaScript -->
+
+  

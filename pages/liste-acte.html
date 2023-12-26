@@ -1,0 +1,190 @@
+
+
+  
+  <my-navbar></my-navbar>
+  <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
+
+<my-sidebar>
+</my-sidebar>
+      
+      <div id="main-content" class="relative mb-5 w-full white-bg-color h-full overflow-y-auto bg-white-50 lg:ml-64 dark:bg-white-900">
+        <!-- content -->
+          <main class=" mt-2 sm:ml-64 p-2">
+           <!-- content -->
+           <div class="p-4  rounded-lg  mt-0 border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+              <!-- Breadcrumb -->
+<nav class="p-2 flex justify-between" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center mb-3 sm:mb-0">
+        <a class=" text-gray-400">Accueil</a>
+      <span class="mx-2 text-gray-400">/</span>
+      <a class=" text-gray-400">Acte</a>
+      <span class="mx-2 text-gray-400">/</span>
+      <span class=" text-gray-800">Acte de naissances</span>
+
+     
+    </ol>
+  </nav>
+  <div class="flex p-2 items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+    <div>
+        <caption class="p-5 text-2xl font-bold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+            Acte de naissances
+            <p class="mt-1 max-w-sm text-3xl text-sm font-normal text-gray-500 dark:text-gray-400">
+                Vestibulum augue proin enim cursus montes, ante. Ultrices posuere mattis elit egestas aliquam pellentesque nisl id quis. 
+            </p>
+        </caption>
+    </div>
+    <div class="flex gap-2">
+        
+
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-900 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Rechercher une acte</button>
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-900 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Filtrer par status</button>
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Ajouter une acte</button>
+    
+    
+    </div>
+    
+</div>
+
+
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+
+
+<div class=" sm:rounded-lg mb-4">
+
+
+
+<div class="relative overflow-x-auto ">
+
+<table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+   
+   
+    <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+            <th scope="col" class="px-6 py-3">
+               ID
+            </th>
+            <th scope="col" class="px-6 py-3">
+                Date de création
+            </th>
+            <th scope="col" class="px-6 py-3">
+                Nom & prénom
+            </th>
+            <th scope="col" class="px-6 py-3">
+                Genre
+            </th>
+            <th scope="col" class="px-6 py-3">
+                Acte
+            </th>
+            <th scope="col" class="px-6 py-3">
+                Status
+            </th>
+            <th scope="col" class="px-6 py-3">
+                <span class="sr-only">Acte</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                #XGY-346
+            </th>
+            <td class="px-6 py-4">
+                09/12/23
+            </td>
+            <td class="px-6 py-4">
+                Mahmout Ben Silziari
+            </td>
+            <td class="px-6 py-4">
+                M
+            </td>
+            <td class="px-6 py-4">
+                Mariage
+            </td>
+            <td class="px-6 py-4">
+                <span class="bg-yellow-100 text-yellow-200 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Pending</span>
+
+            </td>
+            <td class="px-6 py-4 text-right">
+                <span style="cursor: pointer;" class="bg-blue-100 text-yellow-200 rounded-full text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-300 dark:text-yellow-300">
+                    +
+                </span>
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                #YHD-047
+            </th>
+            <td class="px-6 py-4">
+                09/12/23
+            </td>
+            <td class="px-6 py-4">
+                Fatimah Zahra Kikan
+            </td>
+            <td class="px-6 py-4">
+                F
+            </td>
+            <td class="px-6 py-4">
+                Divorce
+            </td>
+            <td class="px-6 py-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Confirmed</span>
+
+            </td>
+
+            <td class="px-6 py-4 text-right">
+                <span style="cursor: pointer;" class="bg-blue-100 text-blue-800 rounded-full text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                    +
+                </span>
+
+                
+            </td>
+        </tr>
+       
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                #YHD-047
+            </th>
+            <td class="px-6 py-4">
+                09/12/23
+            </td>
+            <td class="px-6 py-4">
+                Fatimah Zahra Kikan
+            </td>
+            <td class="px-6 py-4">
+                F
+            </td>
+            <td class="px-6 py-4">
+                Divorce
+            </td>
+            <td class="px-6 py-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Confirmed</span>
+
+            </td>
+
+            <td class="px-6 py-4 text-right">
+                <span style="cursor: pointer;" class="bg-blue-100 text-blue-800 rounded-full text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                    +
+                </span>
+
+                
+            </td>
+        </tr>
+       
+    </tbody>
+</table>
+</div>
+</div>
+  
+          </div>
+          
+        </main>
+         <!-- content -->
+       
+      </div>
+    
+  </div>
+
+  <!-- Optional JavaScript -->
+
+
+      
