@@ -1,0 +1,235 @@
+
+       
+        <main class=" mt-2 sm:ml-64 p-2">
+            <div class="p-4  rounded-lg  mt-0 dark:bg-gray-800 dark:border-gray-700">
+                <breadcrumb-element data='[{"label": "Accueil", "url": "/"},
+                 {"label": "Actes", "url": "/acte"}, 
+                 {"label": "Acte de naissances", "url": "/acte"}, 
+                 {"label": "Détails"}]'></breadcrumb-element>
+
+                
+                 
+                <div class="flex pt-4 ">
+                   
+                </div>
+            
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-2xl font-medium text-bienvenue">
+                            Mahmout Ben Silziari
+                        </p>
+                        <p class="text-sm font-medium text-bienvenue">
+                            Matricule N° JKG - 6789
+                        </p>
+                    </div>
+                    <div class="flex gap-2">
+                        <custom-button content="Imprimer l'acte" classes="text-gray-900 focus:outline-none  rounded-full border border-gray-800 secondary-button focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                            <span class="material-symbols-outlined">
+                                print
+                                </span>
+                        </custom-button>
+                        <custom-link-button link="#modif-acte" content="Modifer l'acte" classes="text-gray-900 focus:outline-none bg-white rounded-full border border-blue-200  focus:z-10 focus:ring-4 focus:ring-blue-200 dark:focus:blue-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 primary-button">
+                            <span class="material-symbols-outlined">
+                                contract_edit
+                                </span>
+                       </custom-link-button>
+                      </div>
+                  </div>
+            </div>
+            <hr class="my-2  separator w-full">
+
+            <div class="p-4  rounded-lg  mt-0  dark:bg-gray-800 dark:border-gray-700">
+          
+                       <!-- content -->
+        
+         
+        
+        
+        <form >
+            <div class="grid gap-6 mb-6 md:grid-cols-2">
+                <div>
+                    <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Base</label>
+                    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" disabled placeholder="Délai légal" required>
+                </div>
+            </div>
+            <hr class="my-2  separator-dashed w-full">
+
+
+
+       
+
+      
+        
+        <div class="p-1 pt-4 flex">
+            <ol class="items-center ol-step   w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
+               
+                <li id="ol-step1" class="flex maron-color cursor-pointer items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-5 h-5  maron-bg-color  border border-gray-500 rounded-sm shrink-0 dark:border-gray-400">
+                        1
+                    </span>
+                    <span>
+                        <h3 class="font-medium leading-tight">Information relative</h3>
+                    </span>
+                </li>
+                <li id="ol-step2" class="flex cursor-pointer items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-5 h-5    border border-gray-500 rounded-sm shrink-0 dark:border-gray-400">
+                        2
+                    </span>
+                    <span>
+                        <h3 class="font-medium leading-tight">Intéressé</h3>
+                    </span>
+                </li>
+                <li class="flex cursor-pointer items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-5 h-5 border border-gray-500 rounded-sm shrink-0 dark:border-gray-400">
+                        3
+                    </span>
+                    <span>
+                        <h3 class="font-medium leading-tight">Déclarant</h3>
+                    </span>
+                </li>
+                <li class="flex cursor-pointer items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-5 h-5 border border-gray-500 rounded-sm shrink-0 dark:border-gray-400">
+                        4
+                    </span>
+                    <span>
+                        <h3 class="font-medium leading-tight">Pére</h3>
+                    </span>
+                </li>
+                <li class="flex cursor-pointer items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-5 h-5 border border-gray-500 rounded-sm shrink-0 dark:border-gray-400">
+                        5
+                    </span>
+                    <span>
+                        <h3 class="font-medium leading-tight">Mére</h3>
+                    </span>
+                </li>
+                <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-5 h-5 border border-gray-500 rounded-sm shrink-0 dark:border-gray-400">
+                        6
+                    </span>
+                    <span>
+                        <h3 class="font-medium leading-tight">Pièces jointes</h3>
+                    </span>
+                </li>
+            </ol>
+        </div>
+        <div class="step active space-y-4 md:space-y-6 p-2 " id="step1">
+            
+           <div class="grid gap-4 mb-4 sm:grid-cols-3">
+               
+              
+
+            <div>
+                <label for="date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date</label>
+                <input type="date" name="date" id="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                placeholder="name@company.com" required="">
+            </div>
+            <div>
+                <label for="time" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Heure</label>
+                <input type="time" name="time" id="hour" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
+            </div>
+
+  
+            <div>
+                   <label for="provinces" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sélectionner un province</label>
+                   <select id="provinces" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                     <option selected>Province</option>
+                     <option value="US">United States</option>
+                     <option value="CA">Canada</option>
+                     <option value="FR">France</option>
+                     <option value="DE">Germany</option>
+                   </select>
+            </div>
+            <div>
+                <label for="departements" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sélectionner un département</label>
+                <select id="departements" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                  <option selected>Département</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+         </div>
+            <div>
+                <label for="communes" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sélectionner une commune</label>
+                <select id="communes" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                  <option selected>Commune</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+         </div>
+            <div>
+                <label for="numero_acte" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro d'acte du mariage</label>
+                <input type="text" name="numero_acte" id="numero_acte" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tapez ici" required="">
+            </div>
+            
+            <div>
+                <label for="numero_certificat_accoucheent" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro certificat d'accouchement</label>
+                <input type="text" name="numero_certificat_accoucheent" id="numero_certificat_accoucheent" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tapez ici" required="">
+            </div>     
+              
+            <div>
+                <label for="formation_sanitaire" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sélectionner sur la liste</label>
+                <select id="formation_sanitaire" name="formation_sanitaire" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                  <option selected>Fromation sanitaire</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+         </div>
+        </div>
+           
+        </div>
+        <div class="step p-2 grid gap-4 mb-4 sm:grid-cols-2 hidden" id="step2">
+            <div>
+                <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username step 2</label>
+                <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="username.example" required="">
+            </div>
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
+            </div>
+            <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                <input type="password" name="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required="">
+            </div>                        <div>
+                <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
+                <input type="password" name="confirm-password" id="confirm-password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required="">
+            </div>
+        </div>
+
+       <div class="flex items-center pl-2 gap-2 justify-between">
+        
+        <div class="flex">
+           
+             <button type="button" id="preview-step" onclick="prevStep()" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-blue-700 rounded-full border border-blue-900 hover:bg-blue-700 hover:text-gray-100 focus:z-10 focus:ring-4 focus:ring-blue-200  text-center dark:bg-blue-900 dark:hover:bg-blue-900 dark:focus:ring-blue-800">
+                Précédent
+            </button>
+        </div>
+        <div class="flex gap-2">
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-900 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                Imprimer PV de déclaration
+            </button>
+            <button type="button" id="next-step" onclick="nextStep()" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-blue-700 rounded-full border border-blue-900 hover:bg-blue-700 hover:text-gray-100 focus:z-10 focus:ring-4 focus:ring-blue-200  text-center dark:bg-blue-900 dark:hover:bg-blue-900 dark:focus:ring-blue-800">
+                Étape suivante
+            </button>
+
+          
+        </div>
+        
+       </div>
+
+    </form>
+            </div>
+
+
+        
+      </main>
+       <!-- content -->
+     
+
+<!-- Optional JavaScript -->
+

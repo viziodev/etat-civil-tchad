@@ -1,7 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@300&family=Orbitron&family=Roboto:wght@100&display=swap'); */
 
 
-
 :root {
     --primary-color: #344054;
     --secondary-color: #E5EDF3;
@@ -12,6 +11,10 @@
     --black-text-color: #000;
     --white-color: #FFFF;
     --bleu-clair: #f6fbff;
+    --maron-color: #CA8C33;
+    --maron-clair-color: #F5F1EB;
+    --bleu-fonce-color: #262D33;
+    --bleu-button-primary:#0067ac;
 
 }
 /* Style the scrollbar track */
@@ -43,14 +46,39 @@
 .primary-bg-color{
  background-color: var(--bleu-clair);
 }
+
 .secondary-bg-color{
     background-color: var(--secondary-color);
+}
+.bleu-color {
+    color: var(--bleu-color);
+}
+.bleu-fonce-color{
+    color: var(--bleu-fonce-color);
+}
+.maron-bg-color {
+    background-color: var(--maron-color);
+    color: var(--white-color);
+    border: none;
+}
+.maron-fonce-bg-color {
+    background-color: var(--maron-color);
+   
+}
+.maron-clair-bg-color {
+    background-color: var(--maron-clair-color);
+}
+.fw-b{
+    font-weight: bold;
 }
 .main-content {
     color: var(--black-text-color);
 }
 .white-bg-color{
     background-color : var(--white-color);
+}
+.bleu-bg-color{
+    background : var(--bleu-color);
 }
   
 .breadcrumb{
@@ -93,5 +121,148 @@
     color: #667085;
 }
 
+.active-link{
+    background-color: #7DA7C3;
+    color: var(--black-text-color);
+}
+
 
 /*  */
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+  }
+
+  .primary-button{
+    background-color: var(--bleu-button-primary);
+    color: var(--white-color);
+
+  }
+
+  .secondary-button{
+    background-color: var(--white-color);
+    color: var(--black-text-color);
+    
+  }
+
+  .text-bienvenue{
+    color: #503C3C;
+  }
+  .separator{
+    border: #f1efef 1.5px solid;
+  }
+  .separator-dashed{
+    border: #f1efef 1.5px dashed;
+  }
+
+
+  [role-tabs="tab"] {
+    border-bottom: none;
+}
+
+[role-tabs="tab"].current {
+    border-bottom: 2px solid var(--maron-color);
+    color: var(--maron-color);
+}
+
+.pagination.active{
+    color: #CA8C33;
+    border-bottom: 2px solid var(--maron-color);
+}
+
+
+
+@media (max-width: 600px) {
+    .nav-bar-button {
+        display: none;
+    }
+}
+
+.lien-sidebar a.active {
+    background-color: red;
+    color: white;  
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}                      
+.rotatex-180 {
+    transform: rotate(180deg);
+    width: 100%; height: 100%;
+}
+
+.chart-container {
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+/* Ajoutez ces styles pour l'opacité et le fond d'ombre */
+.modal-body-open {
+    overflow: hidden; /* Empêche le défilement du body lorsque le modal est ouvert */
+    opacity: 0.7; /* Opacité du fond d'ombre */
+    background-color: #000; /* Couleur du fond d'ombre */
+}
+
+
+/* Styles pour les lignes du tableau au survol */
+.table-row-actions:hover {
+    background-color: #dde3ef; /* Couleur de fond grise au survol */
+    border-radius: 8px; /* Coins arrondis */
+  }
+  
+  /* Styles pour les icônes d'actions au survol */
+  /* .table-row-actions:hover .actions-hidden {
+    display: inline-block;
+  } */
+  #ul-sidebar li a.current {
+    background-color: #0048d9; /* Couleur de fond pour la page actuelle */
+}
+
+.color-recap{
+    color: #868686;
+}
+.regular-16-noir{
+    font: normal;
+    color: var(--black-text-color);
+    font-size: 16;
+}
+.medium-14-gris{
+    font:medium;
+    color: #868686;
+    font-size: 14;
+}
+.extra-bold-14-noir{
+    font-weight: bold;
+    color: var(--black-text-color);
+    font-size: 14;
+}
+.medium-14-blue-secondary{
+    font:medium;
+    color: var(--primary-color);
+    font-size: 14;
+}
+/*   
+  <tr class="table-row-actions bg-white hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+    <!-- ... autres colonnes ... -->
+    <td class="px-3 py-2">
+       <div class="flex items-center gap-2 actions-hidden">
+            <span class="material-symbols-outlined">
+                contract_edit
+            </span>
+            <span class="material-symbols-outlined">
+                visibility
+            </span>
+       </div>
+    </td>
+</tr> */

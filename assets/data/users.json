@@ -1,0 +1,29 @@
+[
+    {
+        "id" : 1,
+        "nom" : "Admin" ,
+        "prenom" : "Admin",
+        "email" : "admin@tasdjil.com",
+        "password" : "123",
+        "centre" : "CAU Ati",
+        "role" : "admin"
+    },
+    {
+        "id" : 2,
+        "nom" : "Operateur" ,
+        "prenom" : "Agent Operateur",
+        "email" : "operateur@tasdjil.com",
+        "password" : "123",
+        "centre" : "CAU Ati",
+        "role" : "operateur"
+    },
+    {
+        "id" : 3,
+        "nom" : "Valideur" ,
+        "prenom" : "Agent Valideur",
+        "email" : "valideur@tasdjil.com",
+        "centre" : "CAU Ati",
+        "password" : "123",
+        "role" : "valideur"
+    }
+]

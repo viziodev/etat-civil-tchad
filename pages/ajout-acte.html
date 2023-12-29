@@ -1,0 +1,816 @@
+<main class=" mt-2 sm:ml-64 p-2">
+    <div class="p-4  rounded-lg  mt-0 dark:bg-gray-800 dark:border-gray-700">
+
+        <breadcrumb-element data='[{"label": "Accueil", "url": "/"},
+                 {"label": "Acte", "url": "/acte"}, 
+                 {"label": "Acte de naissances", "url": "/acte"}, 
+                 {"label": "Ajout acte de naissances"}]'></breadcrumb-element>
+
+
+        <div
+            class="flex pt-4  items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+
+            <a href="#liste-acte" class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 5H1m0 0 4 4M1 5l4-4" />
+                </svg>
+                <p class="text-sm">Retourner vers la liste</p>
+
+
+            </a>
+
+        </div>
+        <div class="flex ">
+            <p class="text-2xl font-medium text-bienvenue">Ajout d'un acte de naissance</p>
+        </div>
+
+    </div>
+    <hr class="my-2  separator w-full">
+
+    <div class="p-4  rounded-lg  mt-0  dark:bg-gray-800 dark:border-gray-700">
+
+        <!-- content -->
+
+
+
+
+        <form>
+            <!-- 
+             <div class="flex mb-4  gap-2 items-center ">
+            <p class="text-md text-bold fw-b bleu-color">1ère étape</p>
+            <p class="text-sm fw-b text-bold text-gray-900 dark:text-white">Veuillez d’abord définir la base de l’acte. </p>
+        </div>
+            -->
+
+            <div class="grid grid-cols-1  gap-2 mb-4">
+                <div class="pt-2 pb-2">
+
+                    <ul
+                        class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center ps-3">
+                                <input id="vue-checkbox-list" type="checkbox" value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                <label for="vue-checkbox-list"
+                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Délai
+                                    légal</label>
+                            </div>
+                        </li>
+                        <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center ps-3">
+                                <input id="react-checkbox-list" type="checkbox" value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                <label for="react-checkbox-list"
+                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Jugement</label>
+                            </div>
+                        </li>
+                        <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center ps-3">
+                                <input id="angular-checkbox-list" type="checkbox" value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                <label for="angular-checkbox-list"
+                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Transcription</label>
+                            </div>
+                        </li>
+                        <li class="w-full dark:border-gray-600">
+                            <div class="flex items-center ps-3">
+                                <input id="laravel-checkbox-list" type="checkbox" value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                <label for="laravel-checkbox-list"
+                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Étranger
+                                    - Délai légal</label>
+                            </div>
+                        </li>
+                        <li class="w-full dark:border-gray-600">
+                            <div class="flex items-center ps-3">
+                                <input id="laravel-checkbox-list" type="checkbox" value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                <label for="laravel-checkbox-list"
+                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Étranger
+                                    - Jugement</label>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="grid grid-cols-1  gap-2 mb-4">
+                <div class="pt-2 ">
+
+                    <ul
+                        class="items-center ol-step w-full text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li id="ol-step1"
+                            class="w-full bg-gray-100 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center justify-between">
+                                <span class="material-symbols-outlined text-green-500">
+                                    check
+                                </span>
+                                <p class="w-full py-1 ms-2  font-medium text-gray-900 dark:text-gray-300">Informations
+                                    relatives</p>
+                            </div>
+                        </li>
+                        <li id="ol-step2"
+                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center justify-between">
+                                <span class="material-symbols-outlined text-red-500">
+                                    cancel
+                                </span>
+                                <p class="w-full py-3 ms-2  font-medium text-gray-900 dark:text-gray-300">Intéressé</p>
+                            </div>
+                        </li>
+                        <li id="ol-step3"
+                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center justify-between">
+                                <span class="material-symbols-outlined text-red-500">
+                                    cancel
+                                </span>
+                                <p class="w-full py-3 ms-2  font-medium text-gray-900 dark:text-gray-300">Déclarant</p>
+                            </div>
+                        </li>
+
+                        <li id="ol-step4"
+                            class="w-full border-b  border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center  justify-between text-gray-400">
+                                <span class="material-symbols-outlined ">
+                                    check
+                                </span>
+                                <p class="w-full py-3 ms-2  font-medium">Père</p>
+                            </div>
+                        </li>
+                        <li id="ol-step5"
+                            class="w-full border-b  border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                            <div class="flex items-center justify-between text-gray-400">
+                                <span class="material-symbols-outlined ">
+                                    check
+                                </span>
+                                <p class="w-full py-3 ms-2  font-medium ">Mère</p>
+                            </div>
+                        </li>
+                        <li id="ol-step6" class="w-full dark:border-gray-100 ">
+                            <div class="flex items-center justify-between  text-gray-400">
+                                <span class="material-symbols-outlined ">
+                                    check
+                                </span>
+                                <p class="w-full py-3 ms-2  font-medium ">Pièces jointes</p>
+                            </div>
+                        </li>
+                        <li id="ol-step7" onclick="showStep(7)" class="w-full dark:border-gray-100 ">
+                            <div class="flex items-center justify-between  text-gray-400">
+                                <span class="material-symbols-outlined ">
+                                    check
+                                </span>
+                                <p class="w-full py-3 ms-2  font-medium ">Récaputilatif</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="step active space-y-4 md:space-y-6 " id="step1">
+
+                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+
+
+
+                    <div>
+                        <label for="date"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date</label>
+                        <input type="date" name="date" id="date"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="name@company.com" required="">
+                    </div>
+
+                    <div>
+                        <label for="time"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Heure</label>
+                        <input type="time" name="time" id="hour"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="name@company.com" required="">
+                    </div>
+
+                    <div>
+                        <label for="numero_fiche"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro de fiche</label>
+                        <input type="text" name="numero_fiche" id="numero_fiche"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Tapez ici" required="">
+                    </div>
+
+
+                    <div>
+                        <label for="provinces" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Type
+                            de déclaration</label>
+                        <select id="provinces"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Sélectionner</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="provinces"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sélectionner un
+                            province</label>
+                        <select id="provinces"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Province</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="departements"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sélectionner un
+                            département</label>
+                        <select id="departements"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Département</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sélectionner une
+                            commune</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+
+
+
+
+
+                    <div>
+                        <label for="numero_acte"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro d'acte du
+                            mariage</label>
+                        <input type="text" name="numero_acte" id="numero_acte"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Tapez ici" required="">
+                    </div>
+
+                    <div>
+                        <label for="numero_certificat_accoucheent"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro certificat
+                            d'accouchement</label>
+                        <input type="text" name="numero_certificat_accoucheent" id="numero_certificat_accoucheent"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Tapez ici" required="">
+                    </div>
+
+                    <div>
+                        <label for="province_sanitaire"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Province de formation
+                            sanitaire</label>
+                        <select id="province_sanitaire" name="province_sanitaire"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Sélectionner sur la liste</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zone_sanitaire"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Zone de formation
+                            sanitaire</label>
+                        <select id="zone_sanitaire" name="zone_sanitaire"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Sélectionner sur la liste</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="formation_sanitaire"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Zone de formation
+                            sanitaire</label>
+                        <select id="formation_sanitaire" name="formation_sanitaire"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Sélectionner sur la liste</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+                <div class=" grid gap-4 mb-4 sm:grid-cols-1">
+                    <div class="relative w-full">
+                        <label for="numero_acte"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rechercher un
+                            lieu</label>
+                        <div class="flex">
+                            <input type="text" name="numero_acte" id="numero_acte"
+                                class="bg-gray-50 border border-r-0 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Tapez ici" required="">
+                            <div class="icon-suffix cursor-pointer" onclick="displaySearchLieu('myDropdownSearch')">
+                                <!-- Ajoutez ici votre icône, par exemple, un SVG ou une balise <i> avec une classe d'icône -->
+                                <span class=" p-1 material-symbols-outlined text-gray-500 p-2 bg-gray-100 rounded-lg">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-blue-800 pt-1 pb-1">
+                            Rechercher lieu
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="step  space-y-4 md:space-y-6  hidden" id="step2">
+                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+
+                    <div>
+                        <label for="nom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom</label>
+                        <input type="text" name="nom_interesse" id="nom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="prénom ici" required="">
+                    </div>
+                    <div>
+                        <label for="prenom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Prénom</label>
+                        <input type="text" name="prenom_interesse" id="prenom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="nom ici" required="">
+                    </div>
+                    <div>
+                        <label for="sexe_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sexe</label>
+                        <select id="sexe_interesse" name="sexe_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Sélectionner sur la liste</option>
+                            <option value="M">Masculin</option>
+                            <option value="F">Feminin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="date_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date</label>
+                        <input type="date" name="date_interesse" id="date_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required>
+                    </div>
+                    <div>
+                        <label for="heure_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Heure</label>
+                        <input type="time" name="heure_interesse" id="heure_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="provinces"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Province de
+                            naissance</label>
+                        <select id="provinces"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Province</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="departements"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Département de
+                            naissance</label>
+                        <select id="departements"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Département</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Commune de
+                            naissance</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ville/Canton de
+                            naissance</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu
+                            de naissance</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="domicile"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Domicile</label>
+                        <input type="text" name="domicile" id="domicile"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Domicile ici" required="">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="step space-y-4 md:space-y-6  hidden" id="step3">
+                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+
+
+                    <div>
+                        <label for="sexe_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Déclarant</label>
+                        <select id="sexe_interesse" name="sexe_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Agent déclarant</option>
+                            <option value="M">Masculin</option>
+                            <option value="F">Feminin</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="prenom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NIN Déclarant</label>
+                        <input type="text" name="prenom_interesse" id="prenom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="NIN" required="">
+                    </div>
+                    <div>
+                        <label for="nom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom Déclarant</label>
+                        <input type="text" name="nom_interesse" id="nom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="nom" required="">
+                    </div>
+                    <div>
+                        <label for="nom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Prénom
+                            Déclarant</label>
+                        <input type="text" name="nom_interesse" id="nom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="prénom" required="">
+                    </div>
+
+
+                    <div>
+                        <label for="domicile"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Téléphone
+                            Déclarant</label>
+                        <input type="text" name="domicile" id="domicile"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="téléphone" required="">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="step  space-y-4 md:space-y-6 hidden" id="step4">
+                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+
+
+                    <div>
+                        <label for="prenom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NIN </label>
+                        <input type="text" name="prenom_interesse" id="prenom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="NIN" required="">
+                    </div>
+                    <div>
+                        <label for="nom_interesse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Nom père</label>
+                        <input type="text" name="nom_interesse" id="nom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="nom" required="">
+                    </div>
+                    <div>
+                        <label for="nom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Prénom père</label>
+                        <input type="text" name="nom_interesse" id="nom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="prénom" required="">
+                    </div>
+                    <div>
+                        <label for="date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date de
+                            naissance</label>
+                        <input type="date" name="date" id="date"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required="">
+                    </div>
+                    <div>
+                        <label for="sexe_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nationalité</label>
+                        <select id="sexe_interesse" name="sexe_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Agent déclarant</option>
+                            <option value="M">Masculin</option>
+                            <option value="F">Feminin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sexe_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profession</label>
+                        <select id="sexe_interesse" name="sexe_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Agent déclarant</option>
+                            <option value="M">Masculin</option>
+                            <option value="F">Feminin</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="step  space-y-4 md:space-y-6 hidden" id="step5">
+                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+
+                    <div>
+                        <label for="prenom_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NIN </label>
+                        <input type="text" name="prenom_interesse" id="prenom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="NIN" required="">
+                    </div>
+                    <div>
+                        <label for="nom_interesse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Nom mère</label>
+                        <input type="text" name="nom_interesse" id="nom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="nom" required="">
+                    </div>
+                    <div>
+                        <label for="nom_interesse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Prénom mère</label>
+                        <input type="text" name="nom_interesse" id="nom_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="prénom" required="">
+                    </div>
+                    <div>
+                        <label for="date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date de
+                            naissance</label>
+                        <input type="date" name="date" id="date"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required="">
+                    </div>
+                    <div>
+                        <label for="sexe_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nationalité</label>
+                        <select id="sexe_interesse" name="sexe_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Agent déclarant</option>
+                            <option value="M">Masculin</option>
+                            <option value="F">Feminin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sexe_interesse"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profession</label>
+                        <select id="sexe_interesse" name="sexe_interesse"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Agent déclarant</option>
+                            <option value="M">Masculin</option>
+                            <option value="F">Feminin</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="step  space-y-4 md:space-y-6 hidden" id="step6">
+
+                <div class=" grid gap-4 mb-4 sm:grid-cols-1">
+
+                    <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                            class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <span class="material-symbols-outlined text-gray-500 dark:text-gray-400">
+                                    cloud_upload
+                                </span>
+                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                        class="font-semibold">Faites glisser le fichier ici</span> </p>
+                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">OU</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Ajouter depuis l'ordinateur</p>
+                            </div>
+                            <input id="dropzone-file" type="file" class="hidden" />
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="step  space-y-4 md:space-y-6 hidden" id="step7">
+
+                <div class=" grid gap-4 mb-4 sm:grid-cols-1">
+
+                    <div class="flex items-center justify-start w-full gap-2">
+
+                        <img class="h-auto max-w-xs" src="../assets/images/chad.png" alt="image description">
+
+                        <div class="flex flex-col">
+                            <p class="extra-bold-14-noir">
+                                RÉPUBLIQUE DU TCHAD
+                            </p>
+                            <p class="medium-14-blue-secondary">
+                                Unité - Travail - Progrés
+                            </p>
+                            <p class="uppercase medium-14-blue-secondary">
+                                AGENCE NATIONALE DES TITRES SÉCURISÉS
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="h-px px-2 my-4  w-full bg-gray-200 border-0 dark:bg-gray-700">
+
+                    <div class="flex items-center justify-start w-full gap-8">
+                        <infos-details title="N° Fiche" subtitle="999929299"></infos-details>
+                        <infos-details title="Déclarant" subtitle="Agent déclarant"></infos-details>
+                        <infos-details title="NNI" subtitle="8188983647"></infos-details>
+                        <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
+                        <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                    </div>
+
+                    <hr class="h-px my-4   w-full bg-gray-200 border-0 dark:bg-gray-700">
+
+                    <div class="flex items-center justify-start w-full gap-8">
+                        <infos-details title="Province" subtitle="06-Kanem"></infos-details>
+                        <infos-details title="Département" subtitle="0601-Kanem"></infos-details>
+                        <infos-details title="Commune" subtitle="060101-Mao"></infos-details>
+                        <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
+                        <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+
+                    </div>
+
+                    <hr class="h-px my-4   w-full bg-gray-200 border-0 dark:bg-gray-700">
+
+                    <div>
+                        <p class="font-bold uppercase mb-2">Enfant</p>
+                        <div class="flex items-center justify-start w-full gap-8">
+
+                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+                            <infos-details title="Sexe" subtitle="M"></infos-details>
+                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
+                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+
+                        </div>
+                    </div>
+
+
+                    <hr class="h-px my-4  w-full bg-gray-200 border-0 dark:bg-gray-700">
+
+                    <div>
+                        <p class="font-bold uppercase mb-2">MÈRE</p>
+                        <div class="flex items-center justify-start w-full gap-8 mb-4">
+
+                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+                            <infos-details title="Sexe" subtitle="M"></infos-details>
+                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
+                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+
+
+                        </div>
+                        <div class="flex items-center justify-start w-full gap-8 ">
+
+                            <infos-details title="Profession" subtitle="Développeur"></infos-details>
+                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Lieu de résidence" subtitle="060101-Mao"></infos-details>
+
+
+                        </div>
+                    </div>
+
+
+                    <hr class="h-px my-4   w-full bg-gray-200 border-0 dark:bg-gray-700">
+
+
+                    <div>
+                        <p class="font-bold uppercase mb-2">PÈRE</p>
+                        <div class="flex items-center justify-start w-full gap-8 mb-4">
+
+                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+                            <infos-details title="Sexe" subtitle="M"></infos-details>
+                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
+                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+
+
+                        </div>
+                        <div class="flex items-center justify-start w-full gap-8 ">
+
+                            <infos-details title="Profession" subtitle="Développeur"></infos-details>
+                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Lieu de résidence" subtitle="060101-Mao"></infos-details>
+
+
+                        </div>
+                    </div>
+
+
+                    <hr class="h-px  my-4  w-full bg-gray-200 border-0 dark:bg-gray-700">
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="flex items-center pl-2 gap-2 justify-between">
+
+                <div class="flex">
+
+                </div>
+
+                <div class="flex items-center gap-2">
+
+                    <!---   
+             <custom-button content="Imprimer PV de déclaration" classes="text-gray-900  focus:outline-none  rounded-full border border-gray-800 secondary-button focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+               
+            </custom-button>
+            -!-->
+                    <custom-button onclick="prevStep()" id="preview-step" content="Étape précédente" hidden
+                        classes="text-gray-900  focus:outline-none secondary-button rounded-full border border-gray-200  focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:gray-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 primary-button">
+
+                    </custom-button>
+
+                    <custom-button onclick="nextStep()" id="next-step" content="Étape suivante"
+                        classes="text-gray-900 focus:outline-none bg-white rounded-full border border-blue-200  focus:z-10 focus:ring-4 focus:ring-blue-200 dark:focus:blue-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 primary-button">
+
+                    </custom-button>
+                    <custom-button onclick="" id="close-step" hidden content="Valider"
+                        classes="text-gray-900 focus:outline-none bg-white rounded-full border border-blue-200  focus:z-10 focus:ring-4 focus:ring-blue-200 dark:focus:blue-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 primary-button">
+
+                    </custom-button>
+
+
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+
+</main>
+<!-- content -->
+
+
+<!-- Optional JavaScript -->

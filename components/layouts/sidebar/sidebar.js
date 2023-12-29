@@ -7,6 +7,7 @@ class MySideBar extends HTMLElement {
 
     connectedCallback() {
         this.render();
+        this.highlightActiveLink();
     }
 
     
@@ -15,6 +16,25 @@ class MySideBar extends HTMLElement {
         // if (name === 'label') {
         //     this.render();
         // }
+    }
+    highlightActiveLink() {
+        const currentUrlHash = window.location.hash;
+        const currentUrl = window.location.href;
+        console.log("Current URL: ", currentUrl);
+        // Vérifiez chaque lien dans le menu
+        this.shadowRoot.querySelectorAll('#ul-sidebar li a').forEach(link => {
+            console.log("href " , link);
+            const linkHash = link.getAttribute('href');
+            console.log("linkHash " , linkHash);
+            console.log("currentUrlHash and linkHash" , currentUrlHash , linkHash);
+            // Comparaison avec l'URL actuelle
+            if (currentUrlHash === linkHash) {
+                console.log("iciicicicic and linkHash" );
+                link.classList.add('active'); // Ajoutez la classe active au lien correspondant
+            } else {
+                link.classList.remove('active'); // Assurez-vous que les autres liens n'ont pas la classe active
+            }
+        });
     }
 
     render() {
@@ -26,7 +46,7 @@ class MySideBar extends HTMLElement {
         <div class="relative flex flex-col flex-1 min-h-0 pt-0  ">
           <div class="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
             <div class="flex-1 px-3 space-y-1 primary-bg-color divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-              <ul class="pb-2 space-y-2">
+              <ul class="pb-2 space-y-2" id="ul-sidebar">
                 <li>
                   <form action="#" method="GET" class="lg:hidden">
                     <label for="mobile-search" class="sr-only">Search</label>
@@ -60,7 +80,7 @@ class MySideBar extends HTMLElement {
                 <p class="text-gray-500 pt-2 pb-2 whitespace-nowrap dark:text-gray-400 mb-2 text-xs paraph-color uppercase">Menu</p>  
 
                 <li>
-                   <a href="#" class="flex  items-center p-2 text-white rounded-full dark:text-white button-color group">
+                   <a href="#" class="flex lien-sidebar items-center p-2 text-white rounded-full dark:text-white button-color group">
                       <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-800 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
 
@@ -71,7 +91,7 @@ class MySideBar extends HTMLElement {
              
                
                 <li>
-                   <a href="#liste-acte" class="flex items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                   <a href="#liste-acte"  class="flex lien-sidebar items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                       <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m6 0a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2M5 5h8m-8 5h8m-8 4h8"/>
                     </svg>
@@ -91,7 +111,7 @@ class MySideBar extends HTMLElement {
                 
                 <p class="text-gray-500 pt-2 pb-2 mb-2 whitespace-nowrap dark:text-gray-400 text-xs uppercase paraph-color">Actions rapides</p>
                 <li>
-                 <a href="#" class="flex items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                 <a href="#ajout-acte" class="flex items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
 
@@ -143,7 +163,7 @@ class MySideBar extends HTMLElement {
          </li>
          
          <li>
-            <a href="#login" class="flex secondary-bg-color items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="../../../pages/login.html" class="flex secondary-bg-color items-center p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
                </svg>
@@ -167,3 +187,5 @@ class MySideBar extends HTMLElement {
 }
 
 customElements.define('my-sidebar', MySideBar);
+
+

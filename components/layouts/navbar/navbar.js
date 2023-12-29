@@ -26,7 +26,6 @@ class MyNavBar extends HTMLElement {
         this.shadowRoot.innerHTML = `
         <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
         <link href="../../../assets/css/style.css" rel="stylesheet" />
-        <script src="../../../assets/js/sidebar.js"></script>
         <nav class="fixed z-30 w-full primary-bg-color">
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
       <div class="flex items-center justify-between">
