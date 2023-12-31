@@ -73,33 +73,38 @@ function updateLinksVisibility() {
   
     // Liste des liens à afficher pour chaque rôle
     const roleBasedLinks = {
-      admin: ["accueil","acte", "liste-acte", "ajouter-acte","modifier-acte","recherche-lieu","notification","parametre","aide" , "deconnexion"],
-      valideur: ["accueil","liste-stock","accueil-valideur","acte","liste-acte","valider-acte", "annuler-acte","annuler-annulation-acte","rectifier-acte" ,"liste-mention","notification","parametre","aide", "deconnexion"],
+      admin: ["accueil","mode-off","uuuuu","uuuujju" ,"acte","details-acte", "ajouter-acte","modifier-acte","recherche-lieu","notification","parametre","aide" , "deconnexion"],
+      valideur: ["accueil","mode-on","selected-agence","liste-stock","accueil-valideur","acte","valider-acte", "annuler-acte","annuler-annulation-acte","rectifier-acte" ,"liste-mention","notification","parametre","aide", "deconnexion"],
       utilisateur: ["link1"],
     };
   
     // Cacher tous les liens
 
-   
-  
     // Afficher les liens spécifiques au rôle de l'utilisateur
-    if (user) {
+    $(document).ready(function () {
+        if (user) {
        
-        const linksToDisplay = roleBasedLinks[user.role] || [];
-        console.log("linksToDisplay ", linksToDisplay);
-        linksToDisplay.forEach(linkHref => {
-            const link = document.getElementById(`${linkHref}`);
-            console.log("link :  ", linkHref);
-            if (link) {
-                link.classList.remove("hidden");
-                console.log("after remove :  ", linkHref);
-            }
-        });
-    }
+       
+            const linksToDisplay = roleBasedLinks[user.role] || [];
+            console.log("linksToDisplay ", linksToDisplay);
+            linksToDisplay.forEach(linkHref => {
+                const link = document.getElementById(`${linkHref}`);
+                console.log("link :  ", linkHref);
+                if (link) {
+                    link.classList.remove("hidden");
+                    console.log("after remove :  ", linkHref);
+                }
+            });
+          
+           
+        }
+      })
+    
    
 }
   
 // Appeler la fonction lors du chargement de la page
 document.addEventListener('DOMContentLoaded', function () {
+   
     updateLinksVisibility();
 });

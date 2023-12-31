@@ -12,7 +12,8 @@
                   </p>
                   <div class="flex gap-2 items-center justify-center">
                     
-                    <select id="select-agence"  class="hidden flex items-center w-full px-4  
+                    <div id="selected-agence" class="hidden" >
+                        <select class=" flex items-center w-full px-4  
                      text-base text-gray-900 border border-gray-800 rounded-full secondary-button 
                       focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 
                       
@@ -23,6 +24,7 @@
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                       </select>
+                    </div>
                        
                     <custom-button content="Aujourd’hui" classes="mt-1 text-gray-900 focus:outline-none  rounded-full border border-gray-800 secondary-button focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                         <span class="material-symbols-outlined">
@@ -47,7 +49,7 @@
                     <custom-card link="#liste-acte" content="Acte de naissance" classes="primary-bg-color border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                         
                     <div class="flex   flex-row items-center  justify-center p-1">
-                        <p class="text-2xl bg-red-300  me-2 px-2.5 rounded-full font-semibold mt-2">999</p>
+                        <p class="text-2xl new-bg  me-2 px-2.5 rounded-full font-semibold mt-2">999</p>
                         
                         <div class="flex flex-column gap-1 rotatex-180" >
                             <div style="width: 10.57px; height: 30px;  background: #FFC700; border-radius: 20px"></div>
@@ -69,9 +71,9 @@
                         
                     </div>
                     </custom-card>
-                    <custom-card content="ACTE DE DÉCÉS" classes="primary-bg-color border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <custom-card link="#liste-acte-deces" content="ACTE DE DÉCÉS" classes="primary-bg-color border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                         <div class="flex   flex-row items-center  justify-center p-1">
-                            <p class="text-2xl font-semibold mt-2 bg-purple-300  me-2 px-2.5 rounded-full">999</p>
+                            <p class="text-2xl font-semibold mt-2 new-bg  me-2 px-2.5 rounded-full">999</p>
                             
                             <div class="flex flex-row gap-1 rotatex-180" >
                                 <div style="width: 10.57px; height: 30px;  background: #FFC700; border-radius: 20px"></div>
@@ -93,9 +95,9 @@
                             
                         </div>
                     </custom-card>
-                    <custom-card content="ACTE DE MARIAGE" classes="maron-clair-bg-color border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <custom-card link="#liste-acte-mariage" content="ACTE DE MARIAGE" classes="maron-clair-bg-color border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                         <div class="flex   flex-row items-center  justify-center p-1">
-                            <p class="text-2xl font-semibold mt-2 bg-blue-300  me-2 px-2.5 rounded-full">999</p>
+                            <p class="text-2xl font-semibold mt-2 new-s-bg  me-2 px-2.5 rounded-full">999</p>
                             
                             <div class="flex flex-row gap-1 rotatex-180" >
                                 <div style="width: 10.57px; height: 30px;  background: #FFC700; border-radius: 20px"></div>
@@ -117,9 +119,9 @@
                             
                         </div>
                     </custom-card>
-                    <custom-card content="Acte de divorce" classes="maron-clair-bg-color border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <custom-card link="#liste-acte-divorce"  content="Acte de divorce" classes="maron-clair-bg-color border border-gray-200 rounded shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                         <div class="flex   flex-row items-center  justify-center p-1">
-                            <p class="text-2xl font-semibold mt-2 bg-blue-300  me-2 px-2.5 rounded-full">999</p>
+                            <p class="text-2xl font-semibold mt-2 new-s-bg  me-2 px-2.5 rounded-full">999</p>
                             
                             <div class="flex flex-row gap-1 rotatex-180" >
                                 <div style="width: 10.57px; height: 30px;  background: #FFC700; border-radius: 20px"></div>
@@ -173,7 +175,7 @@
                         </div>
     
                           <div class="p-2  w-full">
-                                <canvas id="test-linechart" class="" ></canvas>
+                                <canvas id="test-linechart" class="" style="height: 90%;" ></canvas>
                            </div>
                            <div class="p-4 flex items-start justify-start gap-6 border-t border-gray-200  w-full">
                          
@@ -222,16 +224,16 @@
                   
                         </div>
                         <div class="flex gap-2">
-                        <custom-button content="Voir plus" classes="text-gray-900 focus:outline-none  rounded-full border border-gray-800 secondary-button focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        <custom-link-button link="#liste-acte" content="Voir plus" classes="text-gray-900 focus:outline-none  rounded-full border border-gray-800 secondary-button focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                             <span class="material-symbols-outlined">
                                 visibility
                                 </span>
-                        </custom-button>
-                        <custom-button content="Nouvelles saisie" classes="text-gray-900 focus:outline-none bg-white rounded-full border border-blue-200  focus:z-10 focus:ring-4 focus:ring-blue-200 dark:focus:blue-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 primary-button">
+                        </custom-link-button>
+                        <custom-link-button link="#ajout-acte" content="Nouvelles saisie" classes="text-gray-900 focus:outline-none bg-white rounded-full border border-blue-200  focus:z-10 focus:ring-4 focus:ring-blue-200 dark:focus:blue-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 primary-button">
                             <span class="material-symbols-outlined">
                                 add
                                 </span>
-                        </custom-button>
+                        </custom-link-button>
 
                         </div>
                 
@@ -335,18 +337,22 @@
                     -
                 </td> 
                 <td class="px-3 py-2">
-                   <div id="actions-1"  class="hidden-actions flex items-center gap-2 hidden">
-                    <span class=" material-symbols-outlined">
-                        contract_edit
-                        </span>
-                        <span class="material-symbols-outlined">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
                             visibility
                             </span>
+                       </a>
                    </div>
                 </td>
               
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
                 <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     JKG - 6789
                 </th>
@@ -365,25 +371,352 @@
                     6678737
                 </td> <td class="px-3 py-2">
                     -
-                </td> <td class="px-3 py-2">
-                    <div class="flex items-center gap-2">
-                        <span class=" material-symbols-outlined">
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
                             contract_edit
                             </span>
-                            <span class="material-symbols-outlined">
-                                visibility
-                                </span>
-                       </div>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
                 </td>
               
             </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+            <tr  id="actions2" class="bg-white table-row-actions hover:cursor-pointer border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> 
+                <td class="px-3 py-2">
+                   <div id="actions-1"  class=" flex items-center gap-2 ">
+                    <a href="#">
+                        <span class="material-symbols-outlined ">
+                            contract_edit
+                            </span>
+                    </a>
+                       <a href="#details-acte">
+                        <span class="material-symbols-outlined ">
+                            visibility
+                            </span>
+                       </a>
+                   </div>
+                </td>
+              
+            </tr>
+          
         </tbody>
     </table>
 </div>
-<div class="flex pt-4 items-center justify-end">
-    <pagination-component current-page="3" total-pages="5"></pagination-component>
 
-</div>
     </div>
     <div class="hidden rounded-lg " id="soumis" role-tabs="tabpanel" >
        
@@ -492,14 +825,290 @@
                 </td>
               
             </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
         </tbody>
     </table>
     
 </div>
-<div class="flex pt-4 items-center justify-end">
-    <pagination-component current-page="3" total-pages="5"></pagination-component>
 
-</div>
 
 
     </div>
@@ -569,9 +1178,15 @@
                     6678737
                 </td> <td class="px-3 py-2">
                     -
-                </td>
-                 <td class="px-3 py-2">
-                    $2999
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
                 </td>
               
             </tr>
@@ -595,7 +1210,262 @@
                 </td> <td class="px-3 py-2">
                     -
                 </td> <td class="px-3 py-2">
-                    $2999
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
+                </td>
+              
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    JKG - 6789
+                </th>
+                <td class="px-3 py-2 max-w-xs">
+                    Mahmout Ben Silziari
+                </td>
+                <td class="px-3 py-2">
+                    M
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td>
+                <td class="px-3 py-2">
+                    09/11/23
+                </td> <td class="px-3 py-2">
+                    6678737
+                </td> <td class="px-3 py-2">
+                    -
+                </td> <td class="px-3 py-2">
+                    <div class="flex items-center gap-2">
+                        <span class=" material-symbols-outlined">
+                            contract_edit
+                            </span>
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                       </div>
                 </td>
               
             </tr>

@@ -1,23 +1,42 @@
 let currentStep = 1;
 const totalSteps = 7;
+const olStepLis =  document.querySelectorAll('.ol-step li');
+const steps =   document.querySelectorAll('.step');
+const closeStep =  document.getElementById("close-step");
+const previewStepButton =  document.getElementById("preview-step");
+const nextStepButton =  document.getElementById("next-step");
 
 document.addEventListener('DOMContentLoaded', function() {
     showStep(currentStep);
 });
 
 function showStep(step) {
-  
-   document.querySelectorAll('.ol-step li').forEach(s => s.classList.remove('bg-gray-100'));
-    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
 
-   document.getElementById(`step${step}`).classList.add('active');
+  if (olStepLis) {
+    document.querySelectorAll('.ol-step li').forEach(s => s.classList.remove('bg-gray-100'));
+  }
+  if (steps) {
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+  }
+
+  if ( document.getElementById(`step${step}`)) {
+    document.getElementById(`step${step}`).classList.add('active');
+
+  }
+  if ( document.getElementById(`ol-step${step}`)) {
     document.getElementById(`ol-step${step}`).classList.add('bg-gray-100');
-     document.getElementById("close-step").setAttribute("hidden" , true);
+    
+  }
+ 
+    document.getElementById("close-step").setAttribute("hidden" , true);
+    
+  
     if (currentStep === 1) {
         document.getElementById("preview-step").setAttribute("hidden", true);
     } else {
         document.getElementById("preview-step").removeAttribute("hidden");
     }
+ 
 
     if (currentStep === totalSteps) {
         document.getElementById("next-step").setAttribute("hidden", true);
@@ -32,6 +51,7 @@ function showStep(step) {
             document.getElementById(`step${i}`).classList.add('hidden');
         }
     }
+    
 }
 
 function nextStep() {
@@ -56,24 +76,6 @@ function finish() {
 
 
 
-// modal js
-document.addEventListener('DOMContentLoaded', function() {
-    
-  
-// const action = document.querySelector("actions-2");
-// if (action) {
-//  console.log(",my action");
- 
-//  action.addEventListener("mouseover", () => {
-//      console.log("this event ");
-//  });
-// }
-
-
-
-});
-
-
 
 // }
 const displaySearchLieu = (idToDisplay)=> {
@@ -87,29 +89,33 @@ const displaySearchLieu = (idToDisplay)=> {
     // })
 }
 
+//  modal js
 
 const openModal = (idModal)=> {
     const modal = document.getElementById(idModal);
+    
     modal.classList.remove('hidden');
-    modal.classList.add('show');
     modal.classList.add('flex');
     modal.setAttribute('role' , 'dialog');
-    modal.style.zIndex = 1000;
-    document.querySelector('body').classList.add("modal-body-open");
+    modal.setAttribute('aria-modal' , true);
+    document.querySelector('#shadow-div-modal').classList.remove("hidden");
 
 }
 const closeModal = (idModal)=> {
     const modal = document.getElementById(idModal);
     modal.classList.add('hidden');
-    modal.classList.remove('hidden');
-    modal.classList.remove('show');
     modal.classList.remove('flex');
     modal.removeAttribute('role');
-    document.querySelector('body').classList.remove("modal-body-open");
-
+    modal.removeAttribute('aria-modal');
+    document.querySelector('#shadow-div-modal').classList.add("hidden");
     
 }
 
+const bodyClick = ()=> {
+    document.querySelector('body').addEventListener('click' , ()=>{
+      
+    })
+}
 
 // // Obtenez le chemin de la page actuelle (sans le "#" initial)
 
