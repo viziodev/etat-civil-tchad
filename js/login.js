@@ -73,7 +73,7 @@ function updateLinksVisibility() {
   
     // Liste des liens à afficher pour chaque rôle
     const roleBasedLinks = {
-      admin: ["accueil","mode-off","uuuuu","uuuujju" ,"acte","details-acte", "ajouter-acte","modifier-acte","recherche-lieu","notification","parametre","aide" , "deconnexion"],
+      admin: ["accueil","mode-off" ,"acte","details-acte", "ajouter-acte","modifier-acte","recherche-lieu","notification","parametre","aide" , "deconnexion"],
       valideur: ["accueil","mode-on","selected-agence","liste-stock","accueil-valideur","acte","valider-acte", "annuler-acte","annuler-annulation-acte","rectifier-acte" ,"liste-mention","notification","parametre","aide", "deconnexion"],
       utilisateur: ["link1"],
     };
