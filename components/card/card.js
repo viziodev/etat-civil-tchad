@@ -9,10 +9,12 @@ class CustomCard extends HTMLElement {
         const content = this.getAttribute('content') || '';
         const classes = this.getAttribute('classes') || '';
         const link = this.getAttribute('link') || '#';
+        const flb = UserUtility.linkFlowbite();
+        const cssF = UserUtility.linkCss();
         // Créer la structure HTML du composant
         this.shadowRoot.innerHTML = `
-        <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="${flb}" rel="stylesheet" />
+        <link href="${cssF}" rel="stylesheet" />
             <a href="${link}" class="block rounded-lg max-w-sm ${classes}">
                 <div class="max-w-sm w-full flex flex-col items-center justify-start">
                     <div class="p-4 flex items-start justify-start">

@@ -66,10 +66,10 @@ class UserUtility {
         return JSON.parse(localStorage.getItem("userConnected"));
     }
     static linkFlowbite() {
-        return "assets/css/flowbite/flowbite.min.css";
+        return "https://viziodev.github.io/etat-civil-tchad/assets/css/flowbite/flowbite.min.css";
     }
     static linkCss() {
-        return "assets/css/style.css";
+        return "https://viziodev.github.io/etat-civil-tchad/assets/css/style.css";
     }
 }
 
