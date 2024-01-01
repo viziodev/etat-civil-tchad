@@ -67,8 +67,8 @@ class PaginationComponent extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
-        <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="../../../assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
                
             <nav aria-label="Page navigation example">
                 <ul class="pagination inline-flex -space-x-px text-sm">

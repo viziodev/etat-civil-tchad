@@ -12,7 +12,7 @@ function loadUserData(callback) {
 
 const logOut = ()=> {
     localStorage.removeItem("userConnected");
-    window.location.href = "../../../pages/login.html" ;
+    window.location.href = "pages/login.html" ;
 
 }
 const getUserConnected  = () => {
@@ -64,6 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
 class UserUtility {
     static getUserConnected() {
         return JSON.parse(localStorage.getItem("userConnected"));
+    }
+    static linkFlowbite() {
+        return "assets/css/flowbite/flowbite.min.css";
+    }
+    static linkCss() {
+        return "assets/css/style.css";
     }
 }
 

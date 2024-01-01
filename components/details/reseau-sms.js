@@ -13,8 +13,8 @@ class ReseauSms extends HTMLElement {
        const classes = this.getAttribute("classes") ?? "";
        const id = this.getAttribute("mon-id") ?? "";
         this.shadowRoot.innerHTML = `
-        <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="../../../assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <button type="button" class="flex ${classes}  text-sm bg-${bg}-300 p-2 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="${id}" >
         <div class="flex justify-between">

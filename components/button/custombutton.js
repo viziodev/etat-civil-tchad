@@ -11,8 +11,8 @@ class CustomButton extends HTMLElement {
 
         // Créer la structure HTML du composant
         this.shadowRoot.innerHTML = `
-        <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="../../../assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
         
             <button type="button" class="py-2 flex items-center justify-center gap-1 w-full px-5 me-2 mb-2 text-sm font-medium ${classes}">
             <slot></slot>

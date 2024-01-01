@@ -12,8 +12,8 @@ class Breadcrumb extends HTMLElement {
      
     
       this.shadowRoot.innerHTML = `
-      <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-      <link href="../../../assets/css/style.css" rel="stylesheet" />
+      <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
+      <link href="assets/css/style.css" rel="stylesheet" />
         <nav class="flex justify-between" aria-label="Breadcrumb">
           <ol class="inline-flex items-center mb-3 sm:mb-0">
             ${data.map(item => (

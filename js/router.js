@@ -68,7 +68,7 @@ Router.prototype = {
 
           if (!user) {
             console.log("disconnected");
-            window.location.href = "../../../pages/login.html";
+            window.location.href = "pages/login.html";
           } else {
             if (user.role && user.role == "valideur") {
                 const slectAgen = document.getElementById("selected-agence");

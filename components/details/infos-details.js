@@ -11,8 +11,8 @@ class InfosDetails extends HTMLElement {
 
         // Créer la structure HTML du composant
         this.shadowRoot.innerHTML = `
-        <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="../../../assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
         
         <div class="flex flex-col">
         <p  class="medium-14-gris">
