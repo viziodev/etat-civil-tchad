@@ -11,9 +11,12 @@ class Breadcrumb extends HTMLElement {
       // Créer la structure HTML en utilisant les données
      
     
+      const flb = UserUtility.linkFlowbite();
+      const cssF = UserUtility.linkCss();
+      // Créer la structure HTML du composant
       this.shadowRoot.innerHTML = `
-      <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-      <link href="assets/css/style.css" rel="stylesheet" />
+      <link href="${flb}" rel="stylesheet" />
+      <link href="${cssF}" rel="stylesheet" />
         <nav class="flex justify-between" aria-label="Breadcrumb">
           <ol class="inline-flex items-center mb-3 sm:mb-0">
             ${data.map(item => (
