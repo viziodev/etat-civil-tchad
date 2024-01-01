@@ -11,8 +11,8 @@ class CustomCard extends HTMLElement {
         const link = this.getAttribute('link') || '#';
         // Créer la structure HTML du composant
         this.shadowRoot.innerHTML = `
-        <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="etat-civil-tchad//assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
+        <link href="etat-civil-tchad//assets/css/style.css" rel="stylesheet" />
             <a href="${link}" class="block rounded-lg max-w-sm ${classes}">
                 <div class="max-w-sm w-full flex flex-col items-center justify-start">
                     <div class="p-4 flex items-start justify-start">
