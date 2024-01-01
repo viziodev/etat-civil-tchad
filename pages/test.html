@@ -1,3 +1,203 @@
 
 <reseau-sms bg="green" classe-icon="text-green-500" classe-text="text-green-500" icon="security_update_good" text="En ligne">
 </reseau-sms>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-4 mb-4">
+                  
+               
+    <custom-card content="Total" classes="secondary-bg-color border-0  rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+         <div class="flex flex-col items-center pb-4 gap-2">
+            <p class="text-3xl font-semibold">150,967.64</p>
+            <p class="text-sm font-semibold bleu-color">76% of total (198,050.82)</p>
+         </div>
+    </custom-card>
+    <custom-card content="Soumis" classes="primary-bg-color border-0   rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <div class="flex flex-col items-center pb-4 gap-2">
+           <p class="text-3xl font-semibold">150,967.64</p>
+           <p class="text-sm font-semibold bleu-color">76% of total (198,050.82)</p>
+        </div>
+   </custom-card>
+   <custom-card content="imprimés" classes="primary-bg-color border-0   rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div class="flex flex-col items-center pb-4 gap-2">
+       <p class="text-3xl font-semibold">150,967.64</p>
+       <p class="text-sm font-semibold bleu-color">76% of total (198,050.82)</p>
+    </div>
+</custom-card>
+<custom-card content="rejetés" classes="primary-bg-color border-0   rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+<div class="flex flex-col items-center pb-4 gap-2">
+   <p class="text-3xl font-semibold">150,967.64</p>
+   <p class="text-sm font-semibold bleu-color">76% of total (198,050.82)</p>
+</div>
+</custom-card>
+   
+  
+  
+  
+</div>
+
+
+
+
+<div class="p-4 grid gap-4 mb-4 sm:grid-cols-1">
+    <div class="relative w-full">
+        <label for="numero_acte"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rechercher un
+            lieu</label>
+        <div class="flex">
+            <input type="text" name="numero_acte" id="numero_acte"
+                class="bg-gray-50 border border-r-0 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Tapez ici" required="">
+            <div class="icon-suffix cursor-pointer" onclick="displaySearchLieu('myDropdownSearch')">
+                <!-- Ajoutez ici votre icône, par exemple, un SVG ou une balise <i> avec une classe d'icône -->
+                <span class=" p-1 material-symbols-outlined text-gray-500 p-2 bg-gray-100 rounded-lg">
+                    search
+                </span>
+            </div>
+        </div>
+        <p class="text-xs text-blue-800 pt-1 pb-1">
+            Rechercher lieu
+        </p>
+
+    </div>
+    <div id="myDropdownSearch" class="hidden   bg-white rounded-lg shadow w-70 dark:bg-gray-700">
+        <div class="p-2">
+          <label for="input-group-search" class="sr-only">Recherche</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center  pointer-events-none">
+            
+              <span class="  material-symbols-outlined text-gray-500  rounded-lg">
+                search
+            </span>
+            </div>
+            <input type="text" id="input-group-search" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tapez ici...">
+          </div>
+        </div>
+      
+        
+    
+    <div class="relative overflow-y-auto h-48 ">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+    <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <tr>
+    <th scope="col" class="px-6 py-3">
+     Province
+    </th>
+    <th scope="col" class="px-6 py-3">
+        Département
+    </th>
+    <th scope="col" class="px-6 py-3">
+        Commune
+    </th>
+    <th scope="col" class="px-6 py-3">
+        Ville/Canton
+    </th>
+    <th scope="col" class="px-6 py-3">
+        Lieu/Quartier
+    </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  onclick="displaySearchLieu('myDropdownSearch')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+        12 - Mayo-Kebbi Ouest
+    </th>
+    <td class="px-6 py-4">
+        1201 - Mayo-Dallah
+    </td>
+    <td class="px-6 py-4">
+        120103 - Torok
+    </td>
+    <td class="px-6 py-4">
+        1201032023 - Gouin
+    </td>
+    <td class="px-6 py-4">
+       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+        1201032021 - Zalere
+       </span>
+    </td>
+    </tr>
+    <tr  onclick="displaySearchLieu('myDropdownSearch')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+        12 - Mayo-Kebbi Ouest
+    </th>
+    <td class="px-6 py-4">
+        1201 - Mayo-Dallah
+    </td>
+    <td class="px-6 py-4">
+        120103 - Torok
+    </td>
+    <td class="px-6 py-4">
+        1201032023 - Gouin
+    </td>
+    <td class="px-6 py-4">
+       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+        1201032021 - Zalere
+       </span>
+    </td>
+    </tr>
+    
+    </tbody>
+    </table>
+    </div>
+    
+       
+    </div>
+</div>
+
+
+
+{#   <div class="flex items-center justify-start w-full gap-8">
+                        <infos-details title="N° Fiche" subtitle="999929299"></infos-details>
+                        <infos-details title="Déclarant" subtitle="Agent déclarant"></infos-details>
+                        <infos-details title="NNI" subtitle="8188983647"></infos-details>
+                        <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
+                        <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                    </div>
+                    
+                    
+
+                      <div class="flex items-center justify-start w-full gap-8">
+                        <infos-details title="Province" subtitle="06-Kanem"></infos-details>
+                        <infos-details title="Département" subtitle="0601-Kanem"></infos-details>
+                        <infos-details title="Commune" subtitle="060101-Mao"></infos-details>
+                        <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
+                        <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+
+                    </div>
+
+                      <div class="flex items-center justify-start w-full gap-8">
+
+                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+
+                            <infos-details title="Sexe" subtitle="M"></infos-details>
+
+                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details> 
+
+                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+
+                        </div>
+
+                         <div class="flex items-center justify-start w-full gap-8 mb-4">
+
+                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+                            <infos-details title="Sexe" subtitle="M"></infos-details>
+                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
+                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+
+
+                        </div>
+                    
+                    
+                    
+                    #}
+
+                    <link-sidebar id="deconnexion" href="javascript:void(0)" onclick="logOut()" class="hidden "
+                    href="#deconnexion" icon="logout" label="Déconnexion">
+                 </link-sidebar>

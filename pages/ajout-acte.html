@@ -1,4 +1,4 @@
-<main class=" mt-2 sm:ml-64 p-2">
+<main class=" main-content-main mt-2 my-ml-64 p-2">
     <div class="p-4  rounded-lg  mt-0 dark:bg-gray-800 dark:border-gray-700">
 
         <breadcrumb-element data='[{"label": "Accueil", "url": "/"},
@@ -35,137 +35,171 @@
 
         <form>
             
-
             <div class="grid grid-cols-1  gap-2 mb-4">
-                <div class="pt-2 pb-2">
+                <div class="w-full ">
+                    <div class="pt-2 pb-2">
 
-                    <ul
-                        class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                        <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="vue-checkbox-list" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="vue-checkbox-list"
-                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Délai
-                                    légal</label>
-                            </div>
-                        </li>
-                        <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="react-checkbox-list" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="react-checkbox-list"
-                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Jugement</label>
-                            </div>
-                        </li>
-                        <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="angular-checkbox-list" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="angular-checkbox-list"
-                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Transcription</label>
-                            </div>
-                        </li>
-                        <li class="w-full dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="laravel-checkbox-list" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="laravel-checkbox-list"
-                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Étranger
-                                    - Délai légal</label>
-                            </div>
-                        </li>
-                        <li class="w-full dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="laravel-checkbox-list" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="laravel-checkbox-list"
-                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Étranger
-                                    - Jugement</label>
-                            </div>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="grid grid-cols-1  gap-2 mb-4">
-                <div class="pt-2 ">
-
-                    <ul
-                        class="items-center ol-step w-full text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                        <li id="ol-step1"
-                            class="w-full bg-gray-100 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center justify-between">
+                        <ul
+                            class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="vue-checkbox-list" type="checkbox" value=""
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="vue-checkbox-list"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Délai
+                                        légal</label>
+                                </div>
+                            </li>
+                            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="react-checkbox-list" type="checkbox" value=""
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="react-checkbox-list"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Jugement</label>
+                                </div>
+                            </li>
+                            <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="angular-checkbox-list" type="checkbox" value=""
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="angular-checkbox-list"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Transcription</label>
+                                </div>
+                            </li>
+                            <li class="w-full dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="laravel-checkbox-list" type="checkbox" value=""
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="laravel-checkbox-list"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Étranger
+                                        - Délai légal</label>
+                                </div>
+                            </li>
+                            <li class="w-full dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="laravel-checkbox-list" type="checkbox" value=""
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="laravel-checkbox-list"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Étranger
+                                        - Jugement</label>
+                                </div>
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <div class="bg-gray-200  dark:bg-gray-700">
+                        <div id="progressbar-acte" class="bg-gray-600 h-1 rounded-full dark:bg-gray-500" style="width: 15%"></div>
+                    </div>
+                
+                    <div class="grid grid-cols-7 gap-0 mb-0 ol-step">
+                        
+                        <div id="ol-step1" class="flex li-step text-xs items-center justify-center  h-18 dark:bg-gray-800">
+                           
+                           <div class=" flex p-1 items-center justify-between gap-2">
                                 <span class="material-symbols-outlined text-green-500">
                                     check
                                 </span>
-                                <p class="w-full py-1 ms-2  font-medium text-gray-900 dark:text-gray-300">Informations
-                                    relatives</p>
+                                <div class="flex  flex-col">
+                                    <p class="w-full font-medium  ">1. Informations
+                                        relatives
+                                    </p>
+                                    <span class="text-gray-400 font-medium">Rempli.</span>
+                                </div>
                             </div>
-                        </li>
-                        <li id="ol-step2"
-                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center justify-between">
-                                <span class="material-symbols-outlined text-red-500">
-                                    cancel
-                                </span>
-                                <p class="w-full py-3 ms-2  font-medium text-gray-900 dark:text-gray-300">Intéressé</p>
-                            </div>
-                        </li>
-                        <li id="ol-step3"
-                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center justify-between">
-                                <span class="material-symbols-outlined text-red-500">
-                                    cancel
-                                </span>
-                                <p class="w-full py-3 ms-2  font-medium text-gray-900 dark:text-gray-300">Déclarant</p>
-                            </div>
-                        </li>
-
-                        <li id="ol-step4"
-                            class="w-full border-b  border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center  justify-between text-gray-400">
-                                <span class="material-symbols-outlined ">
-                                    check
-                                </span>
-                                <p class="w-full py-3 ms-2  font-medium">Père</p>
-                            </div>
-                        </li>
-                        <li id="ol-step5"
-                            class="w-full border-b  border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                            <div class="flex items-center justify-between text-gray-400">
-                                <span class="material-symbols-outlined ">
-                                    check
-                                </span>
-                                <p class="w-full py-3 ms-2  font-medium ">Mère</p>
-                            </div>
-                        </li>
-                        <li id="ol-step6" class="w-full dark:border-gray-100 ">
-                            <div class="flex items-center justify-between  text-gray-400">
-                                <span class="material-symbols-outlined ">
-                                    check
-                                </span>
-                                <p class="w-full py-3 ms-2  font-medium ">Pièces jointes</p>
-                            </div>
-                        </li>
-                        <li id="ol-step7" onclick="showStep(7)" class="w-full dark:border-gray-100 ">
-                            <div class="flex items-center justify-between  text-gray-400">
-                                <span class="material-symbols-outlined ">
-                                    check
-                                </span>
-                                <p class="w-full py-3 ms-2  font-medium ">Récaputilatif</p>
-                            </div>
-                        </li>
-                    </ul>
-
+                        </div>
+                        <div id="ol-step2" class="li-step flex text-xs items-center justify-center  bg-gray-100 h-18 dark:bg-gray-800">
+                           
+                            <div class=" flex p-1 items-center justify-between gap-2">
+                                 <span class="material-symbols-outlined text-red-500">
+                                     cancel
+                                 </span>
+                                 <div class="flex  flex-col">
+                                     <p class=" w-full font-medium text-gray-400 ">2. Intéressé
+                                     </p>
+                                     <span class="text-gray-400 font-medium">Incomplète.</span>
+                                 </div>
+                             </div>
+                         </div>
+                       
+                         <div id="ol-step3" class="li-step  flex text-xs items-center justify-center  bg-gray-100 h-18 dark:bg-gray-800">
+                           
+                            <div class="flex p-1 items-center justify-between gap-2">
+                                 <span class="material-symbols-outlined text-green-500">
+                                     check
+                                 </span>
+                                 <div class="flex  flex-col">
+                                     <p class="w-full font-medium text-gray-400  ">3. Déclarant
+                                     </p>
+                                     <span class="text-gray-400 font-medium">Vide.</span>
+                                 </div>
+                             </div>
+                         </div>
+                       
+                         <div id="ol-step4" class="li-step  flex text-xs items-center justify-center  bg-gray-100 h-18 dark:bg-gray-800">
+                           
+                            <div class=" flex p-1 items-center justify-between gap-2">
+                                 <span class="material-symbols-outlined text-green-500">
+                                     check
+                                 </span>
+                                 <div class="flex  flex-col">
+                                     <p class="w-full font-medium  text-gray-400">4. Père
+                                     </p>
+                                     <span class="text-gray-400 font-medium">Vide.</span>
+                                 </div>
+                             </div>
+                         </div>
+                         <div id="ol-step5" class="li-step  flex text-xs items-center justify-center  bg-gray-100 h-18 dark:bg-gray-800">
+                           
+                            <div class=" flex p-1 items-center justify-between gap-2">
+                                 <span class="material-symbols-outlined text-green-500">
+                                     check
+                                 </span>
+                                 <div class="flex  flex-col">
+                                    <p class="w-full font-medium text-gray-400 ">5. Mère
+                                    </p>
+                                    <span class="text-gray-400 font-medium">Vide.</span>
+                                 </div>
+                             </div>
+                         </div>
+                         <div id="ol-step6" class="li-step  flex text-xs items-center justify-center  bg-gray-100 h-18 dark:bg-gray-800">
+                           
+                            <div class=" flex p-1 items-center justify-between gap-2">
+                                 <span class="material-symbols-outlined text-green-500">
+                                     check
+                                 </span>
+                                 <div class="flex  flex-col">
+                                    <p class="w-full font-medium  text-gray-400 ">6. Pièce jointe</p>
+                                    <span class="text-gray-400 font-medium">En cours.</span>
+                                 </div>
+                             </div>
+                         </div>
+                       
+                      
+                       
+                         <div id="ol-step7" class="li-step flex text-xs items-center justify-center  bg-gray-100 h-18 dark:bg-gray-800">
+                           
+                            <div class="flex p-1 items-center justify-between gap-2">
+                                <span class="material-symbols-outlined text-gray-300">
+                                    motion_photos_on
+                                    </span>
+                                 <div class="flex  flex-col">
+                                     <p class="w-full font-medium text-gray-400 ">7. Récapitulatif</p>
+                                     <span class="text-gray-400 font-medium ">Vide.</span>
+                                 </div>
+                             </div>
+                         </div>
+                        
+                         
+                    </div>
                 </div>
+                
             </div>
 
 
 
-            <div class="step active space-y-4 md:space-y-6 " id="step1">
-
-                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+            <div class="step active  " id="step1">
+                <p class="font-semibold semibold-16-noir mb-2">Informations de déclaration</p>
+                <div class="px-4 grid gap-4 mb-4 sm:grid-cols-3">
 
 
 
@@ -311,115 +345,13 @@
 
 
                 </div>
-                <div class=" grid gap-4 mb-4 sm:grid-cols-1">
-                    <div class="relative w-full">
-                        <label for="numero_acte"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rechercher un
-                            lieu</label>
-                        <div class="flex">
-                            <input type="text" name="numero_acte" id="numero_acte"
-                                class="bg-gray-50 border border-r-0 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Tapez ici" required="">
-                            <div class="icon-suffix cursor-pointer" onclick="displaySearchLieu('myDropdownSearch')">
-                                <!-- Ajoutez ici votre icône, par exemple, un SVG ou une balise <i> avec une classe d'icône -->
-                                <span class=" p-1 material-symbols-outlined text-gray-500 p-2 bg-gray-100 rounded-lg">
-                                    search
-                                </span>
-                            </div>
-                        </div>
-                        <p class="text-xs text-blue-800 pt-1 pb-1">
-                            Rechercher lieu
-                        </p>
-
-                    </div>
-                    <div id="myDropdownSearch" class="hidden   bg-white rounded-lg shadow w-70 dark:bg-gray-700">
-                        <div class="p-2">
-                          <label for="input-group-search" class="sr-only">Recherche</label>
-                          <div class="relative">
-                            <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center  pointer-events-none">
-                            
-                              <span class="  material-symbols-outlined text-gray-500  rounded-lg">
-                                search
-                            </span>
-                            </div>
-                            <input type="text" id="input-group-search" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tapez ici...">
-                          </div>
-                        </div>
-                      
-                        
-                    
-                    <div class="relative overflow-y-auto h-48 ">
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                    <th scope="col" class="px-6 py-3">
-                     Province
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Département
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Commune
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Ville/Canton
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Lieu/Quartier
-                    </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr  onclick="displaySearchLieu('myDropdownSearch')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        12 - Mayo-Kebbi Ouest
-                    </th>
-                    <td class="px-6 py-4">
-                        1201 - Mayo-Dallah
-                    </td>
-                    <td class="px-6 py-4">
-                        120103 - Torok
-                    </td>
-                    <td class="px-6 py-4">
-                        1201032023 - Gouin
-                    </td>
-                    <td class="px-6 py-4">
-                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
-                        1201032021 - Zalere
-                       </span>
-                    </td>
-                    </tr>
-                    <tr  onclick="displaySearchLieu('myDropdownSearch')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        12 - Mayo-Kebbi Ouest
-                    </th>
-                    <td class="px-6 py-4">
-                        1201 - Mayo-Dallah
-                    </td>
-                    <td class="px-6 py-4">
-                        120103 - Torok
-                    </td>
-                    <td class="px-6 py-4">
-                        1201032023 - Gouin
-                    </td>
-                    <td class="px-6 py-4">
-                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
-                        1201032021 - Zalere
-                       </span>
-                    </td>
-                    </tr>
-                    
-                    </tbody>
-                    </table>
-                    </div>
-                    
-                       
-                    </div>
-                </div>
+             
 
             </div>
-            <div class="step  space-y-4 md:space-y-6  hidden" id="step2">
-                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+            <div class="step    hidden" id="step2">
+          
+                <p class="font-semibold semibold-16-noir mb-2">Intéressé</p>
+                <div class=" px-4  grid gap-4 mb-4 sm:grid-cols-3">
 
                     <div>
                         <label for="nom_interesse"
@@ -510,18 +442,8 @@
                             <option value="DE">Germany</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="communes" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu
-                            de naissance</label>
-                        <select id="communes"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Commune</option>
-                            <option value="US">United States</option>
-                            <option value="CA">Canada</option>
-                            <option value="FR">France</option>
-                            <option value="DE">Germany</option>
-                        </select>
-                    </div>
+
+                 
 
                     <div>
                         <label for="domicile"
@@ -530,12 +452,120 @@
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="Domicile ici" required="">
                     </div>
+                    <div class="relative ">
+                        <label for="numero_acte"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu de naissance</label>
+                        <div class="flex gap-1">
+                           
+                                <select id="communes"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected>Commune</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                </select>
+                            <div title="rechercher un lieu" class="icon-suffix cursor-pointer" onclick="displaySearchLieu('myDropdownSearch')">
+                                <!-- Ajoutez ici votre icône, par exemple, un SVG ou une balise <i> avec une classe d'icône -->
+                                <span class=" p-1 material-symbols-outlined text-gray-500 p-2 bg-gray-100 rounded-lg">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div></div>
+                    <div id="myDropdownSearch"  class=" col-span-3 hidden    bg-white rounded-lg shadow  dark:bg-gray-700">
+                        <div class="p-2">
+                          <label for="input-group-search" class="sr-only">Recherche</label>
+                          <div class="relative">
+                            <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center  pointer-events-none">
+                            
+                              <span class="  material-symbols-outlined text-gray-500  rounded-lg">
+                                search
+                            </span>
+                            </div>
+                            <input type="text" id="input-group-search" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tapez ici...">
+                          </div>
+                        </div>
+                      
+                        
+                    
+                    <div  class="relative overflow-y-auto h-48 ">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                    <th scope="col" class="px-6 py-3">
+                     Province
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Département
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Commune
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Ville/Canton
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Lieu/Quartier
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr  onclick="displaySearchLieu('myDropdownSearch')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        12 - Mayo-Kebbi Ouest
+                    </th>
+                    <td class="px-6 py-4">
+                        1201 - Mayo-Dallah
+                    </td>
+                    <td class="px-6 py-4">
+                        120103 - Torok
+                    </td>
+                    <td class="px-6 py-4">
+                        1201032023 - Gouin
+                    </td>
+                    <td class="px-6 py-4">
+                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+                        1201032021 - Zalere
+                       </span>
+                    </td>
+                    </tr>
+                    <tr  onclick="displaySearchLieu('myDropdownSearch')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        12 - Mayo-Kebbi Ouest
+                    </th>
+                    <td class="px-6 py-4">
+                        1201 - Mayo-Dallah
+                    </td>
+                    <td class="px-6 py-4">
+                        120103 - Torok
+                    </td>
+                    <td class="px-6 py-4">
+                        1201032023 - Gouin
+                    </td>
+                    <td class="px-6 py-4">
+                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+                        1201032021 - Zalere
+                       </span>
+                    </td>
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+                    </div>
+                    
+                       
+                    </div>
+                  
 
                 </div>
 
             </div>
-            <div class="step space-y-4 md:space-y-6  hidden" id="step3">
-                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+            <div class="step  hidden" id="step3">
+                <p class="font-semibold semibold-16-noir mb-2">Déclarant</p>
+                <div class="px-4  grid gap-4 mb-4 sm:grid-cols-3">
 
 
                     <div>
@@ -585,8 +615,9 @@
                 </div>
 
             </div>
-            <div class="step  space-y-4 md:space-y-6 hidden" id="step4">
-                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+            <div class="step  hidden" id="step4">
+                <p class="font-semibold semibold-16-noir mb-2">Informations du Père</p>
+                <div class="px-4  grid gap-4 mb-4 sm:grid-cols-3">
 
 
                     <div>
@@ -622,7 +653,7 @@
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nationalité</label>
                         <select id="sexe_interesse" name="sexe_interesse"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Agent déclarant</option>
+                            <option selected>Nationalité</option>
                             <option value="M">Masculin</option>
                             <option value="F">Feminin</option>
                         </select>
@@ -632,19 +663,190 @@
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profession</label>
                         <select id="sexe_interesse" name="sexe_interesse"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Agent déclarant</option>
+                            <option selected>Profession</option>
                             <option value="M">Masculin</option>
                             <option value="F">Feminin</option>
                         </select>
                     </div>
+                   
+                    <div>
+                        <label for="provinces"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Province de
+                            naissance</label>
+                        <select id="provinces"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Province</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="departements"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Département de
+                            naissance</label>
+                        <select id="departements"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Département</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Commune de
+                            naissance</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ville/Canton de
+                            naissance</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+
+                 
+
+                    <div>
+                        <label for="domicile"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Domicile</label>
+                        <input type="text" name="domicile" id="domicile"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Domicile ici" required="">
+                    </div>
+                    <div class="relative ">
+                        <label for="numero_acte"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu de naissance</label>
+                        <div class="flex gap-1">
+                           
+                                <select id="communes"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected>Commune</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                </select>
+                            <div title="rechercher un lieu" class="icon-suffix cursor-pointer" onclick="displaySearchLieu('myDropdownSearch_pere')">
+                                <!-- Ajoutez ici votre icône, par exemple, un SVG ou une balise <i> avec une classe d'icône -->
+                                <span class=" p-1 material-symbols-outlined text-gray-500 p-2 bg-gray-100 rounded-lg">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div></div>
+                    <div id="myDropdownSearch_pere"  class=" col-span-3 hidden    bg-white rounded-lg shadow  dark:bg-gray-700">
+                        <div class="p-2">
+                          <label for="input-group-search" class="sr-only">Recherche</label>
+                          <div class="relative">
+                            <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center  pointer-events-none">
+                            
+                              <span class="  material-symbols-outlined text-gray-500  rounded-lg">
+                                search
+                            </span>
+                            </div>
+                            <input type="text" id="input-group-search" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tapez ici...">
+                          </div>
+                        </div>
+                      
+                        
+                    
+                    <div  class="relative overflow-y-auto h-48 ">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                    <th scope="col" class="px-6 py-3">
+                     Province
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Département
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Commune
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Ville/Canton
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Lieu/Quartier
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr  onclick="displaySearchLieu('myDropdownSearch_pere')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        12 - Mayo-Kebbi Ouest
+                    </th>
+                    <td class="px-6 py-4">
+                        1201 - Mayo-Dallah
+                    </td>
+                    <td class="px-6 py-4">
+                        120103 - Torok
+                    </td>
+                    <td class="px-6 py-4">
+                        1201032023 - Gouin
+                    </td>
+                    <td class="px-6 py-4">
+                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+                        1201032021 - Zalere
+                       </span>
+                    </td>
+                    </tr>
+                    <tr  onclick="displaySearchLieu('myDropdownSearch_pere')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        12 - Mayo-Kebbi Ouest
+                    </th>
+                    <td class="px-6 py-4">
+                        1201 - Mayo-Dallah
+                    </td>
+                    <td class="px-6 py-4">
+                        120103 - Torok
+                    </td>
+                    <td class="px-6 py-4">
+                        1201032023 - Gouin
+                    </td>
+                    <td class="px-6 py-4">
+                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+                        1201032021 - Zalere
+                       </span>
+                    </td>
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+                    </div>
+                    
+                       
+                    </div>
+
 
 
 
                 </div>
 
             </div>
-            <div class="step  space-y-4 md:space-y-6 hidden" id="step5">
-                <div class=" grid gap-4 mb-4 sm:grid-cols-3">
+            <div class="step  hidden" id="step5">
+                <p class="font-semibold semibold-16-noir mb-2">Informations du Mère</p>
+                <div class="px-4  grid gap-4 mb-4 sm:grid-cols-3">
 
                     <div>
                         <label for="prenom_interesse"
@@ -679,7 +881,7 @@
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nationalité</label>
                         <select id="sexe_interesse" name="sexe_interesse"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Agent déclarant</option>
+                            <option selected>Nationalité</option>
                             <option value="M">Masculin</option>
                             <option value="F">Feminin</option>
                         </select>
@@ -689,20 +891,190 @@
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profession</label>
                         <select id="sexe_interesse" name="sexe_interesse"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Agent déclarant</option>
+                            <option selected>Profession</option>
                             <option value="M">Masculin</option>
                             <option value="F">Feminin</option>
                         </select>
                     </div>
+
+                    <div>
+                        <label for="provinces"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Province de
+                            naissance</label>
+                        <select id="provinces"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Province</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="departements"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Département de
+                            naissance</label>
+                        <select id="departements"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Département</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Commune de
+                            naissance</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="communes"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ville/Canton de
+                            naissance</label>
+                        <select id="communes"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Commune</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+
+                 
+
+                    <div>
+                        <label for="domicile"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Domicile</label>
+                        <input type="text" name="domicile" id="domicile"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Domicile ici" required="">
+                    </div>
+                    <div class="relative ">
+                        <label for="numero_acte"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu de naissance</label>
+                        <div class="flex gap-1">
+                           
+                                <select id="communes"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected>Commune</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                </select>
+                            <div title="rechercher un lieu" class="icon-suffix cursor-pointer" onclick="displaySearchLieu('myDropdownSearch_mere')">
+                                <!-- Ajoutez ici votre icône, par exemple, un SVG ou une balise <i> avec une classe d'icône -->
+                                <span class=" p-1 material-symbols-outlined text-gray-500 p-2 bg-gray-100 rounded-lg">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div></div>
+                    <div id="myDropdownSearch_mere"  class=" col-span-3 hidden    bg-white rounded-lg shadow  dark:bg-gray-700">
+                        <div class="p-2">
+                          <label for="input-group-search" class="sr-only">Recherche</label>
+                          <div class="relative">
+                            <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center  pointer-events-none">
+                            
+                              <span class="  material-symbols-outlined text-gray-500  rounded-lg">
+                                search
+                            </span>
+                            </div>
+                            <input type="text" id="input-group-search" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tapez ici...">
+                          </div>
+                        </div>
+                      
+                        
+                    
+                    <div  class="relative overflow-y-auto h-48 ">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                    <th scope="col" class="px-6 py-3">
+                     Province
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Département
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Commune
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Ville/Canton
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Lieu/Quartier
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr  onclick="displaySearchLieu('myDropdownSearch_mere')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        12 - Mayo-Kebbi Ouest
+                    </th>
+                    <td class="px-6 py-4">
+                        1201 - Mayo-Dallah
+                    </td>
+                    <td class="px-6 py-4">
+                        120103 - Torok
+                    </td>
+                    <td class="px-6 py-4">
+                        1201032023 - Gouin
+                    </td>
+                    <td class="px-6 py-4">
+                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+                        1201032021 - Zalere
+                       </span>
+                    </td>
+                    </tr>
+                    <tr  onclick="displaySearchLieu('myDropdownSearch_mere')" class="cursor-pointer bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        12 - Mayo-Kebbi Ouest
+                    </th>
+                    <td class="px-6 py-4">
+                        1201 - Mayo-Dallah
+                    </td>
+                    <td class="px-6 py-4">
+                        120103 - Torok
+                    </td>
+                    <td class="px-6 py-4">
+                        1201032023 - Gouin
+                    </td>
+                    <td class="px-6 py-4">
+                       <span class="bg-blue-200 border border-gray-500 rounded-full px-3">
+                        1201032021 - Zalere
+                       </span>
+                    </td>
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+                    </div>
+                    
+                       
+                    </div>
+
 
 
 
                 </div>
 
             </div>
-            <div class="step  space-y-4 md:space-y-6 hidden" id="step6">
-
-                <div class=" grid gap-4 mb-4 sm:grid-cols-1">
+            <div class="step  hidden" id="step6">
+                <p class="font-semibold semibold-16-noir mb-2">Pièces jointes</p>
+                <div class="px-4  grid gap-4 mb-4 sm:grid-cols-1">
 
                     <div class="flex items-center justify-center w-full">
                         <label for="dropzone-file"
@@ -722,47 +1094,82 @@
 
                 </div>
             </div>
-            <div class="step  space-y-4 md:space-y-6 hidden" id="step7">
-
-                <div class=" grid gap-4 mb-4 sm:grid-cols-1">
+            <div class="step  hidden" id="step7">
+                <p class="font-semibold semibold-16-noir mb-2">Récapitulatif de déclaration</p>
+                <div class="px-4  grid gap-4 mb-4 sm:grid-cols-1">
 
                    <rep-chad></rep-chad>
                     <hr class="h-px px-2 my-4  w-full bg-gray-200 border-0 dark:bg-gray-700">
 
-                    <div class="flex items-center justify-start w-full gap-8">
-                        <infos-details title="N° Fiche" subtitle="999929299"></infos-details>
-                        <infos-details title="Déclarant" subtitle="Agent déclarant"></infos-details>
-                        <infos-details title="NNI" subtitle="8188983647"></infos-details>
-                        <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
-                        <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                    <div class="grid grid-cols-5 gap-4">
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="N° Fiche" subtitle="999929299"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Déclarant" subtitle="Agent déclarant"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="NNI" subtitle="8188983647"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                        </div>
                     </div>
+                   
 
                     <hr class="h-px my-4   w-full bg-gray-200 border-0 dark:bg-gray-700">
 
-                    <div class="flex items-center justify-start w-full gap-8">
-                        <infos-details title="Province" subtitle="06-Kanem"></infos-details>
-                        <infos-details title="Département" subtitle="0601-Kanem"></infos-details>
-                        <infos-details title="Commune" subtitle="060101-Mao"></infos-details>
-                        <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
-                        <infos-details title="Téléphone" subtitle="66774628"></infos-details>
-
+                  
+                    <div class="grid grid-cols-5 gap-4">
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Province" subtitle="06-Kanem"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Département" subtitle="0601-Kanem"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Commune" subtitle="060101-Mao"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Nom" subtitle="Rachit DAGLO"></infos-details>
+                        </div>
+                        <div class="flex items-center justify-start rounded ">
+                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                        </div>
                     </div>
 
                     <hr class="h-px my-4   w-full bg-gray-200 border-0 dark:bg-gray-700">
 
                     <div>
                         <p class="font-bold uppercase mb-2">Enfant</p>
-                        <div class="flex items-center justify-start w-full gap-8">
-
-                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
-                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
-                            <infos-details title="Sexe" subtitle="M"></infos-details>
-                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
-                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
-                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
-                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
-
+                      
+                        <div class="grid grid-cols-5 gap-4">
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                               <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                 <infos-details title="Sexe" subtitle="M"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                               <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+                            </div>
                         </div>
+
                     </div>
 
 
@@ -770,26 +1177,47 @@
 
                     <div>
                         <p class="font-bold uppercase mb-2">MÈRE</p>
-                        <div class="flex items-center justify-start w-full gap-8 mb-4">
-
-                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
-                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
-                            <infos-details title="Sexe" subtitle="M"></infos-details>
-                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
-                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
-                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
-                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
-
-
+                        
+                       
+                        <div class="grid grid-cols-5 gap-4 ">
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                               <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                 <infos-details title="Sexe" subtitle="M"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                               <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Profession" subtitle="Développeur"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            </div>
+                           
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Lieu de résidence" subtitle="060101-Mao"></infos-details>
+                            </div>
                         </div>
-                        <div class="flex items-center justify-start w-full gap-8 ">
-
-                            <infos-details title="Profession" subtitle="Développeur"></infos-details>
-                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
-                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
-                            <infos-details title="Lieu de résidence" subtitle="060101-Mao"></infos-details>
-
-
+                     
+                        <div class="grid grid-cols-5 gap-4">
+                           
                         </div>
                     </div>
 
@@ -799,26 +1227,41 @@
 
                     <div>
                         <p class="font-bold uppercase mb-2">PÈRE</p>
-                        <div class="flex items-center justify-start w-full gap-8 mb-4">
-
-                            <infos-details title="Nom" subtitle="Yaya"></infos-details>
-                            <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
-                            <infos-details title="Sexe" subtitle="M"></infos-details>
-                            <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
-                            <infos-details title="Téléphone" subtitle="66774628"></infos-details>
-                            <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
-                            <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
-
-
-                        </div>
-                        <div class="flex items-center justify-start w-full gap-8 ">
-
-                            <infos-details title="Profession" subtitle="Développeur"></infos-details>
-                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
-                            <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
-                            <infos-details title="Lieu de résidence" subtitle="060101-Mao"></infos-details>
-
-
+                        <div class="grid grid-cols-5 gap-4 ">
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Nom" subtitle="Yaya"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                               <infos-details title="Prénom" subtitle="Ousmane"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                 <infos-details title="Sexe" subtitle="M"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                               <infos-details title="Date de naissance" subtitle="26/12/2023"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Téléphone" subtitle="66774628"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Commune de naissance" subtitle="060101-Mao"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Lieu de naissance" subtitle="060101-Mao"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Profession" subtitle="Développeur"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            </div>
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Commune de résidence" subtitle="060101-Mao"></infos-details>
+                            </div>
+                           
+                            <div class="flex items-center justify-start rounded ">
+                                <infos-details title="Lieu de résidence" subtitle="060101-Mao"></infos-details>
+                            </div>
                         </div>
                     </div>
 
@@ -832,7 +1275,7 @@
 
 
 
-            <div class="flex items-center pl-2 gap-2 justify-between">
+            <div class="flex items-center p-4 gap-2 justify-between">
 
                 <div class="flex">
 

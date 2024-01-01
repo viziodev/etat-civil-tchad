@@ -33,7 +33,7 @@
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
             clip-rule="evenodd"></path>
       </svg>
-      <svg id="toggleSidebarMobileClose" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+      <svg id="toggleSidebarMobileClose" class="hidden w-6 h-6 bg-red-400" fill="currentColor" viewBox="0 0 20 20"
          xmlns="http://www.w3.org/2000/svg">
          <path fill-rule="evenodd"
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -41,25 +41,34 @@
       </svg>
    </button>
    
+   
    <div class="flex pt-0 overflow-hidden bg-gray-50 dark:bg-gray-900">
 
       <aside id="sidebar"
-         class="fixed top-0 left-0 z-20 flex flex-col flex-shrink-0 hidden w-64 h-full pt-4 font-normal duration-75 lg:flex transition-width primary-bg-color overflow-y-auto"
+         class="fixed sidebar-my top-0 left-0 z-20 flex flex-col flex-shrink-0  hidden w-64 h-full pt-4 font-normal duration-75 
+         lg:flex transition-width primary-bg-color overflow-y-auto"
          aria-label="Sidebar">
          <div class="relative flex flex-col flex-1 min-h-0 pt-0  ">
             <div class="flex flex-col flex-1 pt-5 pb-2 overflow-y-auto">
                <div
-                  class="flex-1 px-3 space-y-1 primary-bg-color divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-
+                  class="flex-1 px-3 space-y-1 primary-bg-color  dark:bg-gray-800 dark:divide-gray-700">
+                
                   <ul class="pb-2 space-y-2" id="ul-sidebar">
+                    <div class="flex items-center   justify-end">
+                     <button id="closeSideBar" title="fermer" class="hover:text-gray-900 p-1 hover:bg-gray-100">
+                        <span class="material-symbols-outlined">
+                           close
+                           </span>
+                     </button>
+                    </div>
                      <a href="#" class="flex ml-2 md:w-64">
                         <img src="assets/images/tasdjil-logo.png" class="h-8 w-auto mr-3 max-w-64"
                            alt="FlowBite Logo" />
                      </a>
 
-
                      <div class="w-full max-w-sm bg-white  rounded-lg shadow ">
 
+                      
                         <div class="flex items-center p-2 gap-2">
                            <button type="button"
                               class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
@@ -81,6 +90,13 @@
                         </div>
                      </div>
                      <div class="flex items-center  gap-2 p-2  ">
+                        <button onclick="logOut()" title="Déconnexion" type="button"
+                        class="flex text-sm bg-blue-100  p-2 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                        id="user-menu-button-2">
+                        <span class="material-symbols-outlined">
+                           logout
+                        </span>
+                     </button>
                         <button type="button"
                            class="flex text-sm bg-blue-100  p-2 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                            id="user-menu-button-2">
@@ -88,6 +104,7 @@
                               language_french
                            </span>
                         </button>
+                      
 
                         <button type="button" id="mode-off"
                            class="flex hidden  text-sm bg-red-300 p-2 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
@@ -147,25 +164,25 @@
                         <ul id="dropdown-actes" class="hidden py-2 space-y-2">
                            <li>
                               <a href="#liste-acte"
-                                 class="flex items-center w-full  rounded-full p-2 text-gray-900 transition duration-75  pl-11 group  dark:text-white dark:hover:bg-blue-700">Naissance</a>
+                                 class="flex items-center w-full  rounded-full p-2  transition duration-75  pl-11 group  dark:text-white dark:hover:bg-blue-700">Naissance</a>
                            </li>
                            <li>
                               <a href="#liste-acte-mariage"
-                                 class="flex items-center w-full  rounded-full p-2 text-gray-900 transition duration-75  pl-11 group  dark:text-white dark:hover:bg-blue-700">Mariage</a>
+                                 class="flex items-center w-full  rounded-full p-2  transition duration-75  pl-11 group  dark:text-white dark:hover:bg-blue-700">Mariage</a>
                            </li>
                            <li>
                               <a href="#liste-acte-deces"
-                                 class="flex items-center  rounded-full w-full p-2 text-gray-900 transition duration-75  pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Décés</a>
+                                 class="flex items-center  rounded-full w-full p-2  transition duration-75  pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Décés</a>
                            </li>
                            <li>
                               <a href="#liste-acte-divorce"
-                                 class="flex items-center rounded-full w-full p-2 text-gray-900 transition duration-75  pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Divorce</a>
+                                 class="flex items-center rounded-full w-full p-2  transition duration-75  pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Divorce</a>
                            </li>
                         </ul>
                      </li>
                      <li id="liste-stock" class="hidden">
                         <a href="#liste-stock"
-                           class="flex lien-sidebar items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex lien-sidebar items-center secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               inventory_2
                            </span>
@@ -174,7 +191,7 @@
                      </li>
                      <li id="liste-mention" class="hidden">
                         <a href="#liste-mention"
-                           class="flex lien-sidebar items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex lien-sidebar items-center secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               document_scanner
                            </span>
@@ -189,7 +206,7 @@
                         Actions rapides</p>
                      <li id="valider-acte" class="hidden">
                         <a href="#valider-acte"
-                           class="flex lien-sidebar items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex lien-sidebar items-center secondary-bg-color p-2 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               check_circle
                            </span>
@@ -198,7 +215,7 @@
                      </li>
                      <li id="annuler-acte" class="hidden">
                         <a href="#annuler-acte"
-                           class="flex lien-sidebar items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex lien-sidebar items-center secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               contract_delete
                            </span>
@@ -207,7 +224,7 @@
                      </li>
                      <li id="annuler-annulation-acte" class="hidden">
                         <a href="#annuler-annulation-acte"
-                           class="flex lien-sidebar items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex lien-sidebar items-center secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               tab_close
                            </span>
@@ -215,7 +232,7 @@
                         </a>
                      <li id="rectifier-acte" class="hidden">
                         <a href="#rectifier-acte"
-                           class="flex lien-sidebar items-center secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex lien-sidebar items-center secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               tab_close
                            </span>
@@ -225,7 +242,7 @@
                      </li>
                      <li id="ajouter-acte" class="hidden">
                         <a href="#ajout-acte"
-                           class="flex items-center lien-sidebar secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex items-center lien-sidebar secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               add
                            </span>
@@ -235,7 +252,7 @@
 
                      <li id="details-acte" class="hidden">
                         <a href="#details-acte"
-                           class="flex items-center lien-sidebar secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex items-center lien-sidebar secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               contract_edit
                            </span>
@@ -244,7 +261,7 @@
                      </li>
                      <li id="recherche-lieu" class="hidden">
                         <a href="#rechercher-lieu"
-                           class="flex items-center lien-sidebar secondary-bg-color p-2 text-gray-900 rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                           class="flex items-center lien-sidebar secondary-bg-color p-2  rounded-full dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                            <span class="material-symbols-outlined">
                               travel_explore
                            </span>
@@ -272,10 +289,7 @@
                      </link-sidebar>
                      <hr class="mx-1 bg-white border-0">
 
-                     <link-sidebar id="deconnexion" href="javascript:void(0)" onclick="logOut()" class="hidden "
-                        href="#deconnexion" icon="logout" label="Déconnexion">
-                     </link-sidebar>
-
+                   
 
                   </ul>
 
@@ -285,7 +299,7 @@
          </div>
       </aside>
 
-      <div class="fixed inset-0 z-10 hidden primary-bg-color" id="sidebarBackdrop"></div>
+      <div class="fixed inset-0 z-10 hidden " id="sidebarBackdrop"></div>
 
 
       <div id="main-content"
@@ -316,6 +330,8 @@
 
 
    <script src="assets/js/index.js"></script>
+   <script src="js/search.js"></script>
+
    <script src="js/login.js"></script>
    <script src="assets/js/sidebar.js"></script>
    <script src="assets/js/tabs.js"></script>
@@ -355,3 +371,8 @@
 </body>
 
 </html>
+
+
+
+
+

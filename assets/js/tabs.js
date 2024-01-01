@@ -29,10 +29,16 @@ $(document).ready(function() {
                     // Réinitialiser la classe de tous les boutons
                     tabButtons.forEach(function(tabButton) {
                         tabButton.classList.remove("current");
+                        
+                        
+                        tabButton.querySelector('div').classList.remove("maron-bg-color");
+                        tabButton.querySelector('div').classList.add("bg-gray-300");
                     });
         
                     // Add the "current" class to the clicked tab button
                     button.classList.add("current");
+                    button.querySelector('div').classList.remove("bg-gray-300");
+                    button.querySelector('div').classList.add("maron-bg-color");
                     // Afficher l'onglet correspondant
                     var tabId = button.getAttribute('aria-tabs-controls');
                     localStorage.setItem('activeTab', tabId);

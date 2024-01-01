@@ -120,6 +120,7 @@
 
 .button-color{
     background-color: #7DA7C3;
+    color: var(--white-color);
 }
 
 .paraph-color{
@@ -183,7 +184,52 @@
     .nav-bar-button {
         display: none;
     }
+   
 }
+
+
+/* @media screen and (max-width: 700px) {
+    .sidebar {
+        display: block;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar {
+     display: none;
+    }
+  }
+ */
+
+ .my-ml-64{
+    margin-left: 16rem;
+}
+/* Exemple de media query pour un écran de bureau */
+@media screen and (min-width: 768px) {
+    /* Styles pour un écran de bureau */
+    /* .sidebar-my {
+        width: 250px;
+    }
+    .my-ml-64 {
+        margin-left: 0rem;
+    } */
+    .my-ml-64 {
+        margin-left: 16rem;
+    }
+}
+
+/* Exemple de media query pour une tablette */
+@media screen and (max-width: 768px) {
+    /* Styles pour une tablette */
+   
+    .my-ml-64 {
+        margin-left: 0rem;
+    }
+}
+
+/* .sidebar {
+    width: 25%; 
+} */
 
 .lien-sidebar a.active {
     background-color: red;
@@ -242,6 +288,10 @@ canvas {
     color: var(--black-text-color);
     font-size: 16;
 }
+.semibold-16-noir{
+    color: var(--black-text-color);
+    font-size: 16;
+}
 .medium-14-gris{
     font:medium;
     color: #868686;
@@ -286,4 +336,11 @@ canvas {
             </span>
        </div>
     </td>
+
+    // Exemple avec jQuery pour masquer la sidebar sur un clic sur un bouton
+$('#toggle-sidebar-btn').on('click', function() {
+    $('.sidebar').toggle();
+    $('.content').toggleClass('expanded');
+});
+
 </tr> */

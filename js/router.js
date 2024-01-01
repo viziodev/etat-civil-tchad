@@ -127,13 +127,15 @@ Router.prototype = {
               fill: false,
               borderColor: "#1C64F2",
               tension: 0.1,
+              borderWidth: 1
             },
             {
               label: "",
-              data: [44, 50, 70, 79, 56, 44, 40],
+              data: [44, 50, 22, 79, 30, 44, 40],
               fill: false,
               borderColor: "#7E3AF2",
               tension: 0.1,
+              borderWidth: 1
             },
             {
               label: "",
@@ -141,12 +143,14 @@ Router.prototype = {
               fill: false,
               borderColor: "#D61F69",
               tension: 0.1,
+              borderWidth: 1
             },
           ],
         };
         const config = {
           type: "line",
           data: data,
+
           
         };
         new Chart(ctx, config);

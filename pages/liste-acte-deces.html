@@ -30,378 +30,908 @@
 
            <div class="p-4  rounded-lg  mt-0  dark:bg-gray-800 dark:border-gray-700">
               <!-- Breadcrumb -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-4 mb-4">
-                  
-               
-                <custom-card content="Total" classes="maron-clair-bg-color border-0  rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                     <div class="flex flex-col items-center pb-4 gap-2">
-                        <p class="text-3xl font-semibold">150,967.64</p>
-                        <p class="text-sm font-semibold maron-color">76% of total (198,050.82)</p>
-                     </div>
-                </custom-card>
-                <custom-card content="Soumis" classes="maron-clair-bg-color border-0   rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <div class="flex flex-col items-center pb-4 gap-2">
-                       <p class="text-3xl font-semibold">150,967.64</p>
-                       <p class="text-sm font-semibold maron-color">76% of total (198,050.82)</p>
-                    </div>
-               </custom-card>
-               <custom-card content="imprimés" classes="maron-clair-bg-color border-0   rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <div class="flex flex-col items-center pb-4 gap-2">
-                   <p class="text-3xl font-semibold">150,967.64</p>
-                   <p class="text-sm font-semibold maron-color">76% of total (198,050.82)</p>
-                </div>
-           </custom-card>
-           <custom-card content="rejetés" classes="maron-clair-bg-color border-0   rounded-lg shadow  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <div class="flex flex-col items-center pb-4 gap-2">
-               <p class="text-3xl font-semibold">150,967.64</p>
-               <p class="text-sm font-semibold maron-color">76% of total (198,050.82)</p>
-            </div>
-       </custom-card>
-               
-              
-              
-              
-            </div>
-
-
-
-
-
-<div class=" sm:rounded-lg mb-4">
-
-    <div class="border-b border-gray-200 dark:border-gray-700 flex justify-between ">
-        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"  role-tabs="tablist">
-            <li class="me-2" >
-                <button class="inline-block p-4 border-b-2 rounded-t-lg current " id="saisie-tab" type="button" role-tabs="tab" aria-tabs-controls="saisie-liste" >
-                    Actes saisies</button>
-            </li>
-            <li class="me-2">
-                <button class="inline-block p-4 rounded-t-lg  dark:hover:text-gray-300" id="soumis-tab" type="button" role-tabs="tab" aria-tabs-controls="soumis" >Actes soumis</button>
-            </li>
-            <li class="me-2">
-                <button class="inline-block p-4  rounded-t-lg  dark:hover:text-gray-300" id="imprimer-tab"  type="button" role-tabs="tab" aria-tabs-controls="imprimer" >Actes à imprimer</button>
-            </li>
-            <li class="me-2" role="presentation">
-                <button class="inline-block p-4  rounded-t-lg  dark:hover:text-gray-300" id="imprime-tab"  type="button" role-tabs="tab" aria-tabs-controls="imprime" >Actes imprimés</button>
-            </li>
-            <li role="presentation">
-                <button class="inline-block p-4  rounded-t-lg  dark:hover:text-gray-300" id="rejet-tab" type="button" role-tabs="tab" aria-tabs-controls="rejet" >Actes rejetés</button>
-            </li>
-        </ul>
-       
-
-               <div>
-                <form class="max-w-xs mx-auto">
-                    <div class="relative">
-                        <span class="material-symbols-outlined absolute start-0 bottom-3 text-gray-500 dark:text-gray-400 w-5 h-5 rtl:rotate-[270deg]">
-                            search
-                           
-                        </span>
-                       
-                        <input type="text" id="floating-search" class="block py-2.5 ps-6 pe-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"  placeholder="Rechercher " />
-                        <label for="floating-search" class="absolute text-sm text-red-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:start-6 peer-focus:start-0 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone number</label>
-                    </div>
-                </form>
-               </div>
-                
-
-    </div>
-    <div id="default-tab-content">
-        <div class="  rounded-lg bg-white" id="saisie-liste" role-tabs="tabpanel" >
-            <div class="flex gap-4 border-b border-gray-200 dark:border-gray-700 mb-2">
-           
-                <my-legend span="visibility" text="Aperçu">
-                </my-legend>
-                <my-legend span="contract_edit" text="Modifier">
-                </my-legend>
-                <my-legend span="article" text="Récapitulatif">
-                </my-legend>
-                <my-legend span="delete" text="Supprimer">
-                </my-legend>
-                <my-legend span="approval_delegation" text="Aperçu">
-                </my-legend>
-                <my-legend span="visibility" text="Soumettre">
-                </my-legend>
-               
-               
-            </div>
-    
-    <div class="relative overflow-x-auto  sm:rounded-full">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-blue-400   dark:text-gray-400">
-                <tr>
-                    <th scope="col" class="px-3 py-2">
-                        N° Fiche
-                    </th>
-                    <th scope="col" class="px-2 py-2">
-                        Nom
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Sexe
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Date acte
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Date de naissance
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Tél. déclarant
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Motif rejet
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Action
-                    </th>
-                  
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
-                    <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        JKG - 6789
-                    </th>
-                    <td class="px-3 py-2 max-w-xs">
-                        Mahmout Ben Silziari
-                    </td>
-                    <td class="px-3 py-2">
-                        M
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td> <td class="px-3 py-2">
-                        6678737
-                    </td> <td class="px-3 py-2">
-                        -
-                    </td> <td class="px-3 py-2">
-                        $2999
-                    </td>
-                  
-                </tr>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
-                    <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        JKG - 6789
-                    </th>
-                    <td class="px-3 py-2 max-w-xs">
-                        Mahmout Ben Silziari
-                    </td>
-                    <td class="px-3 py-2">
-                        M
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td> <td class="px-3 py-2">
-                        6678737
-                    </td> <td class="px-3 py-2">
-                        -
-                    </td> <td class="px-3 py-2">
-                        $2999
-                    </td>
-                  
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="flex pt-4 items-center justify-end">
-        <pagination-component current-page="3" total-pages="5"></pagination-component>
-    
-    </div>
-        </div>
-        <div class="hidden rounded-lg " id="soumis" role-tabs="tabpanel" >
-           
-            <div class="flex gap-4 border-b border-gray-200 dark:border-gray-700 mb-2">
-           
-                <my-legend span="visibility" text="Aperçu">
-                </my-legend>
-                <my-legend span="sync" text="Syncroniser">
-                </my-legend>
-               
-               
-            </div>
-    
-    <div class="relative overflow-x-auto  sm:rounded-full">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-blue-400   dark:text-gray-400">
-                <tr>
-                    <th scope="col" class="px-3 py-2">
-                        N° Fiche
-                    </th>
-                    <th scope="col" class="px-2 py-2">
-                        Nom
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Sexe
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Date acte
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Date de naissance
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Tél. déclarant
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Motif rejet
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Action
-                    </th>
-                  
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
-                    <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        JKG - 6789
-                    </th>
-                    <td class="px-3 py-2 max-w-xs">
-                        Mahmout Ben Silziari
-                    </td>
-                    <td class="px-3 py-2">
-                        M
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td> <td class="px-3 py-2">
-                        6678737
-                    </td> <td class="px-3 py-2">
-                        -
-                    </td> <td class="px-3 py-2">
-                        $2999
-                    </td>
-                  
-                </tr>
-          
-            </tbody>
-        </table>
         
-    </div>
-    <div class="flex pt-4 items-center justify-end">
-        <pagination-component current-page="3" total-pages="5"></pagination-component>
-    
-    </div>
-    
-    
-        </div>
-        <div class="hidden  rounded-lg " id="imprimer" role-tabs="tabpanel" >
-    
-            <div class="flex gap-2">
-                
 
-                <my-legend span="visibility" text="Aperçu">
-                </my-legend>
-                <my-legend span="contract" text="Acte">
-                </my-legend>
-                <my-legend span="sync" text="Syncroniser">
-                </my-legend>
-               
-            </div>
-            
+
+
+
+            <div class="sm:rounded-lg mb-4">
+                <div class="border-b border-gray-200 dark:border-gray-700 flex justify-between">
+                    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" role-tabs="tablist">
+                        <li class="me-2">
+                            <button class="inline-block p-2 border-b-2 rounded-t-lg current" id="saisie-tab" type="button"
+                                role-tabs="tab" aria-tabs-controls="saisie-liste">
+                                Actes saisies
+                                <div
+                                    class="inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white maron-bg-color border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                                    99
+                                </div>
+                            </button>
+                        </li>
+                        <li class="me-2">
+                            <button class="inline-block p-2 rounded-t-lg dark:hover:text-gray-300" id="soumis-tab"
+                                type="button" role-tabs="tab" aria-tabs-controls="soumis">
+                                Actes soumis
+                                <div class="inline-flex items-center  justify-center w-6 h-6 text-xs font-bold text-white bg-gray-300 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                                    67
+                                </div>
+                            </button>
+                        </li>
+                        <li class="me-2">
+                            <button class="inline-block p-2 rounded-t-lg dark:hover:text-gray-300" id="imprimer-tab"
+                                type="button" role-tabs="tab" aria-tabs-controls="imprimer">
+                                Actes à imprimer
+                                <div
+                                    class="inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-gray-300 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                                    13
+                                </div>
+                            </button>
+                        </li>
+                        <li class="me-2" role="presentation">
+                            <button class="inline-block p-2 rounded-t-lg dark:hover:text-gray-300" id="imprime-tab"
+                                type="button" role-tabs="tab" aria-tabs-controls="imprime">
+                                Actes imprimés
+                                <div
+                                    class="inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-gray-300 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                                    22
+                                </div>
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <button class="inline-block p-2 rounded-t-lg dark:hover:text-gray-300" id="rejet-tab"
+                                type="button" role-tabs="tab" aria-tabs-controls="rejet">
+                                Actes rejetés
+                                <div
+                                    class="inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-gray-300 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                                    10
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
     
-    <div class="relative overflow-x-auto  sm:rounded-full">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-blue-400   dark:text-gray-400">
-                <tr>
-                    <th scope="col" class="px-3 py-2">
-                        N° Fiche
-                    </th>
-                    <th scope="col" class="px-2 py-2">
-                        Nom
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Sexe
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Date acte
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Date de naissance
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Tél. déclarant
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Motif rejet
-                    </th>
-                    <th scope="col" class="px-3 py-2">
-                        Action
-                    </th>
-                  
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
-                    <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        JKG - 6789
-                    </th>
-                    <td class="px-3 py-2 max-w-xs">
-                        Mahmout Ben Silziari
-                    </td>
-                    <td class="px-3 py-2">
-                        M
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td> <td class="px-3 py-2">
-                        6678737
-                    </td> <td class="px-3 py-2">
-                        -
-                    </td>
-                     <td class="px-3 py-2">
-                        $2999
-                    </td>
-                  
-                </tr>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
-                    <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        JKG - 6789
-                    </th>
-                    <td class="px-3 py-2 max-w-xs">
-                        Mahmout Ben Silziari
-                    </td>
-                    <td class="px-3 py-2">
-                        M
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td>
-                    <td class="px-3 py-2">
-                        09/11/23
-                    </td> <td class="px-3 py-2">
-                        6678737
-                    </td> <td class="px-3 py-2">
-                        -
-                    </td> <td class="px-3 py-2">
-                        $2999
-                    </td>
-                  
-                </tr>
-            </tbody>
-        </table>
-    </div>
-        </div>
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="imprime" role-tabs="tabpanel" >
-            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        </div>
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="rejet" role-tabs="tabpanel" >
-            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        </div>
-    </div>
-</div>
+                    <div>
+                        <form class="max-w-xs mx-auto">
+                            <div class="relative">
+                                <span
+                                    class="material-symbols-outlined absolute start-0 bottom-3 text-gray-500 dark:text-gray-400 w-5 h-5 rtl:rotate-[270deg]">
+                                    search
+                                </span>
+    
+                                <input type="text" id="floating-search"
+                                    class="block py-2.5 ps-6 pe-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                                    placeholder="Rechercher " />
+                                <label for="floating-search"
+                                    class="absolute text-sm text-red-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:start-6 peer-focus:start-0 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone
+                                    number</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="default-tab-content">
+                    <div class="rounded-lg bg-white" id="saisie-liste" role-tabs="tabpanel">
+                        <div class="flex gap-4 border-b border-gray-200 dark:border-gray-700 mb-2">
+                            <my-legend span="visibility" text="Aperçu"> </my-legend>
+                            <my-legend span="contract_edit" text="Modifier"> </my-legend>
+                            <my-legend span="article" text="Récapitulatif"> </my-legend>
+                            <my-legend span="delete" text="Supprimer"> </my-legend>
+                            <my-legend span="approval_delegation" text="Aperçu"> </my-legend>
+                            <my-legend span="visibility" text="Soumettre"> </my-legend>
+                        </div>
+    
+                        <div class="relative overflow-x-auto sm:rounded-full">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-blue-400 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="px-3 py-2">N° Fiche</th>
+                                        <th scope="col" class="px-2 py-2">Nom</th>
+                                        <th scope="col" class="px-3 py-2">Sexe</th>
+                                        <th scope="col" class="px-3 py-2">Date acte</th>
+                                        <th scope="col" class="px-3 py-2">Date de naissance</th>
+                                        <th scope="col" class="px-3 py-2">Tél. déclarant</th>
+                                        <th scope="col" class="px-3 py-2">Motif rejet</th>
+                                        <th scope="col" class="px-3 py-2">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex pt-4 items-center justify-end">
+                            <pagination-component current-page="3" total-pages="5"></pagination-component>
+                        </div>
+                    </div>
+                    <div class="hidden rounded-lg" id="soumis" role-tabs="tabpanel">
+                        <div class="flex gap-4 border-b border-gray-200 dark:border-gray-700 mb-2">
+                            <my-legend span="visibility" text="Aperçu"> </my-legend>
+                            <my-legend span="sync" text="Syncroniser"> </my-legend>
+                        </div>
+    
+                        <div class="relative overflow-x-auto sm:rounded-full">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-blue-400 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="px-3 py-2">N° Fiche</th>
+                                        <th scope="col" class="px-2 py-2">Nom</th>
+                                        <th scope="col" class="px-3 py-2">Sexe</th>
+                                        <th scope="col" class="px-3 py-2">Date acte</th>
+                                        <th scope="col" class="px-3 py-2">Date de naissance</th>
+                                        <th scope="col" class="px-3 py-2">Tél. déclarant</th>
+                                        <th scope="col" class="px-3 py-2">Motif rejet</th>
+                                        <th scope="col" class="px-3 py-2">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex pt-4 items-center justify-end">
+                            <pagination-component current-page="3" total-pages="5"></pagination-component>
+                        </div>
+                    </div>
+                    <div class="hidden rounded-lg" id="imprimer" role-tabs="tabpanel">
+                        <div class="flex gap-2 border-b border-gray-200 dark:border-gray-700 mb-2">
+                            <my-legend span="visibility" text="Aperçu"> </my-legend>
+                            <my-legend span="contract" text="Acte"> </my-legend>
+                            <my-legend span="sync" text="Syncroniser"> </my-legend>
+                        </div>
+    
+                        <div class="relative overflow-x-auto sm:rounded-full">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-blue-400 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="px-3 py-2">N° Fiche</th>
+                                        <th scope="col" class="px-2 py-2">Nom</th>
+                                        <th scope="col" class="px-3 py-2">Sexe</th>
+                                        <th scope="col" class="px-3 py-2">Date acte</th>
+                                        <th scope="col" class="px-3 py-2">Date de naissance</th>
+                                        <th scope="col" class="px-3 py-2">Tél. déclarant</th>
+                                        <th scope="col" class="px-3 py-2">Motif rejet</th>
+                                        <th scope="col" class="px-3 py-2">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex pt-4 items-center justify-end">
+                            <pagination-component current-page="3" total-pages="5"></pagination-component>
+                        </div>
+                    </div>
+                    <div class="hidden rounded-lg" id="imprime" role-tabs="tabpanel">
+                        <div class="flex gap-2 border-b border-gray-200 dark:border-gray-700 mb-2">
+                            <my-legend span="visibility" text="Aperçu"> </my-legend>
+                            <my-legend span="contract" text="Acte"> </my-legend>
+                            <my-legend span="sync" text="Syncroniser"> </my-legend>
+                        </div>
+    
+                        <div class="relative overflow-x-auto sm:rounded-full">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-blue-400 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="px-3 py-2">N° Fiche</th>
+                                        <th scope="col" class="px-2 py-2">Nom</th>
+                                        <th scope="col" class="px-3 py-2">Sexe</th>
+                                        <th scope="col" class="px-3 py-2">Date acte</th>
+                                        <th scope="col" class="px-3 py-2">Date de naissance</th>
+                                        <th scope="col" class="px-3 py-2">Tél. déclarant</th>
+                                        <th scope="col" class="px-3 py-2">Motif rejet</th>
+                                        <th scope="col" class="px-3 py-2">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex pt-4 items-center justify-end">
+                            <pagination-component current-page="3" total-pages="5"></pagination-component>
+                        </div>
+                    </div>
+                    <div class="hidden rounded-lg" id="rejet" role-tabs="tabpanel">
+                        <div class="flex gap-2 border-b border-gray-200 dark:border-gray-700 mb-2">
+                            <my-legend span="visibility" text="Aperçu"> </my-legend>
+                            <my-legend span="contract" text="Acte"> </my-legend>
+                            <my-legend span="sync" text="Syncroniser"> </my-legend>
+                        </div>
+    
+                        <div class="relative overflow-x-auto sm:rounded-full">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-blue-400 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="px-3 py-2">N° Fiche</th>
+                                        <th scope="col" class="px-2 py-2">Nom</th>
+                                        <th scope="col" class="px-3 py-2">Sexe</th>
+                                        <th scope="col" class="px-3 py-2">Date acte</th>
+                                        <th scope="col" class="px-3 py-2">Date de naissance</th>
+                                        <th scope="col" class="px-3 py-2">Tél. déclarant</th>
+                                        <th scope="col" class="px-3 py-2">Motif rejet</th>
+                                        <th scope="col" class="px-3 py-2">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                        <th scope="row"
+                                            class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            JKG - 6789
+                                        </th>
+                                        <td class="px-3 py-2 max-w-xs">Mahmout Ben Silziari</td>
+                                        <td class="px-3 py-2">M</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">09/11/23</td>
+                                        <td class="px-3 py-2">6678737</td>
+                                        <td class="px-3 py-2">-</td>
+                                        <td class="px-3 py-2">
+                                            <div id="actions-1" class="flex items-center gap-2">
+                                                <a href="#">
+                                                    <span class="material-symbols-outlined">
+                                                        contract_edit
+                                                    </span>
+                                                </a>
+                                                <a href="#details-acte">
+                                                    <span class="material-symbols-outlined">
+                                                        visibility
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex pt-4 items-center justify-end">
+                            <pagination-component current-page="3" total-pages="5"></pagination-component>
+                        </div>
+                    </div>
+                </div>
+            </div>
   
           </div>
           

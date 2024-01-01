@@ -14,7 +14,7 @@ class InfosDetails extends HTMLElement {
         <link href="assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
         <link href="assets/css/style.css" rel="stylesheet" />
         
-        <div class="flex flex-col">
+        <div class="flex flex-col ">
         <p  class="medium-14-gris">
         ${title}
         </p>
