@@ -39,9 +39,12 @@ class CustomLinkButton extends HTMLElement {
         const link2 = this.getAttribute('link') || '#';
 
         // Créer la structure HTML du composant
+        const flb = UserUtility.linkFlowbite();
+        const cssF = UserUtility.linkCss();
+        // Créer la structure HTML du composant
         this.shadowRoot.innerHTML = `
-        <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="../../../assets/css/style.css" rel="stylesheet" />
+        <link href="${flb}" rel="stylesheet" />
+        <link href="${cssF}" rel="stylesheet" />
             <a href="${link2}" type="button" class="py-2 flex items-center gap-1 w-full px-5 me-2 mb-2 text-sm font-medium ${classes2}">
             <slot></slot>
             ${content2}

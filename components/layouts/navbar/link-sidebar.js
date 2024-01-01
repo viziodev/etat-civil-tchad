@@ -13,9 +13,12 @@ class LinkSidebar extends HTMLElement {
     }
 
     render() {
+        const flb = UserUtility.linkFlowbite();
+        const cssF = UserUtility.linkCss();
+        // Créer la structure HTML du composant
         this.shadowRoot.innerHTML = `
-        <link href="../../../assets/css/flowbite/flowbite.min.css" rel="stylesheet" />
-        <link href="../../../assets/css/style.css" rel="stylesheet" />
+        <link href="${flb}" rel="stylesheet" />
+        <link href="${cssF}" rel="stylesheet" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
        
             <li id="${this.id}" >   
