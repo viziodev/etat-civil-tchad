@@ -20,6 +20,9 @@
     --maron-clair-color: #F5F1EB;
     --bleu-fonce-color: #262D33;
     --bleu-button-primary:#0067ac;
+    --hidden{
+        display: none;
+    }
 
 }
 /* Style the scrollbar track */
@@ -201,36 +204,50 @@
   }
  */
 
- .my-ml-64{
-    margin-left: 16rem;
-}
-/* Exemple de media query pour un écran de bureau */
-@media screen and (min-width: 768px) {
-    /* Styles pour un écran de bureau */
-    /* .sidebar-my {
-        width: 250px;
-    }
-    .my-ml-64 {
-        margin-left: 0rem;
-    } */
-    .my-ml-64 {
-        margin-left: 16rem;
-    }
-}
-
-/* Exemple de media query pour une tablette */
-@media screen and (max-width: 768px) {
-    /* Styles pour une tablette */
-   
-    .my-ml-64 {
-        margin-left: 0rem;
-    }
-}
 
 /* .sidebar {
     width: 25%; 
 } */
 
+/* Styles par défaut pour tous les écrans */
+.my-ml-64 .openSide {
+    margin-left: 0rem;
+}
+  
+.my-ml-64{
+    margin-left: 16rem;
+}
+
+#closeSideBar{
+    display: none;
+}
+  /* Media query pour les tablettes */
+
+  @media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .my-ml-64  {
+        margin-left: 0rem;
+    }
+    #sidebar{
+       display: none;
+    }
+    #closeSideBar{
+        display: block;
+    }
+  }
+  
+  /* Media query pour les mobiles */
+  @media only screen and (max-width: 599px) {
+    .my-ml-64  {
+        margin-left: 0rem;
+    }
+    #closeSideBar{
+        display: block;
+    }
+    #sidebar{
+        display: none;
+     }
+  }
+  
 .lien-sidebar a.active {
     background-color: red;
     color: white;  

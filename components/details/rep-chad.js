@@ -14,7 +14,7 @@ class RepChad extends HTMLElement {
         <link href="${cssF}" rel="stylesheet" />
         <div class="flex items-center justify-start w-full gap-2">
 
-        <img class="h-auto max-w-xs" src="../assets/images/chad.png" alt="image description">
+        <img class="h-auto max-w-xs" src="assets/images/chad.png" alt="image description">
 
         <div class="flex flex-col">
             <p class="extra-bold-14-noir">

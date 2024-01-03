@@ -1,0 +1,22 @@
+/* Error: From line 153, column 3 of assets\css\hamburger.scss: 
+ *     ╷
+ * 153 │   .hidden{
+ *     │   ^^^^^^^
+ *     ╵
+ * You may not @extend selectors across media queries.
+ *     ,
+ * 161 |       @extend .hidden;
+ *     |       ^^^^^^^^^^^^^^^
+ *     '
+ *   assets\css\hamburger.scss 161:7  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: From line 153, column 3 of assets\\css\\hamburger.scss: \a     \2577 \a 153 \2502    .hidden{\d\a     \2502    ^^^^^^^\a     \2575 \aYou may not @extend selectors across media queries.\a     \2577 \a 161 \2502        @extend .hidden;\d\a     \2502        ^^^^^^^^^^^^^^^\a     \2575 \a   assets\\css\\hamburger.scss 161:7  root stylesheet";
+}

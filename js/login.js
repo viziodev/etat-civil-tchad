@@ -62,14 +62,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 class UserUtility {
+     static modeProd() {
+        return true;
+     }
     static getUserConnected() {
         return JSON.parse(localStorage.getItem("userConnected"));
     }
+
+    static getBaseUrl() {
+
+    }
+
     static linkFlowbite() {
-        return "https://viziodev.github.io/etat-civil-tchad/assets/css/flowbite/flowbite.min.css";
+        return  this.modeProd()? "https://viziodev.github.io/etat-civil-tchad/assets/css/flowbite/flowbite.min.css":"assets/css/flowbite/flowbite.min.css";
     }
     static linkCss() {
-        return "https://viziodev.github.io/etat-civil-tchad/assets/css/style.css";
+        return this.modeProd()?"https://viziodev.github.io/etat-civil-tchad/assets/css/style.css":"assets/css/style.css";
     }
 }
 

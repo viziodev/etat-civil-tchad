@@ -25,28 +25,15 @@
    <div id="shadow-div-modal" modal-backdrop class="hidden bg-gray-900/50 dark:bg-gray-900/80 fixed inset-0 z-40"></div>
 
 
-   <button id="toggleSidebarMobile" aria-expanded="true" aria-controls="sidebar"
-      class="p-2 text-gray-600 rounded cursor-pointer lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-      <svg id="toggleSidebarMobileHamburger" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-         xmlns="http://www.w3.org/2000/svg">
-         <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-      </svg>
-      <svg id="toggleSidebarMobileClose" class="hidden w-6 h-6 bg-red-400" fill="currentColor" viewBox="0 0 20 20"
-         xmlns="http://www.w3.org/2000/svg">
-         <path fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
-      </svg>
-   </button>
-   
+  
+ 
    
    <div class="flex pt-0 overflow-hidden bg-gray-50 dark:bg-gray-900">
 
       <aside id="sidebar"
-         class="fixed sidebar-my top-0 left-0 z-20 flex flex-col flex-shrink-0  hidden w-64 h-full pt-4 font-normal duration-75 
-         lg:flex transition-width primary-bg-color overflow-y-auto"
+         class="fixed sidebar-my top-0 left-0 z-20 flex flex-col flex-shrink-0 
+           w-64 h-full pt-4 font-normal duration-75 
+         flex transition-width primary-bg-color overflow-y-auto"
          aria-label="Sidebar">
          <div class="relative flex flex-col flex-1 min-h-0 pt-0  ">
             <div class="flex flex-col flex-1 pt-5 pb-2 overflow-y-auto">
@@ -55,12 +42,12 @@
                 
                   <ul class="pb-2 space-y-2" id="ul-sidebar">
                     <div class="flex items-center   justify-end">
-                     <button id="closeSideBar" title="fermer" class="hover:text-gray-900 p-1 hover:bg-gray-100">
-                        <span class="material-symbols-outlined">
-                           close
-                           </span>
-                     </button>
-                    </div>
+                        <button id="closeSideBar" title="fermer" class="hover:text-gray-900 p-1 hover:bg-gray-100">
+                           <span class="material-symbols-outlined">
+                              close
+                              </span>
+                        </button>
+                       </div>
                      <a href="#" class="flex ml-2 md:w-64">
                         <img src="assets/images/tasdjil-logo.png" class="h-8 w-auto mr-3 max-w-64"
                            alt="FlowBite Logo" />
@@ -299,13 +286,29 @@
          </div>
       </aside>
 
-      <div class="fixed inset-0 z-10 hidden " id="sidebarBackdrop"></div>
+      <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
 
 
-      <div id="main-content"
+      <div 
          class="relative mb-5 w-full white-bg-color h-full overflow-y-auto bg-white-50 lg:ml-64 dark:bg-white-900">
          <!-- inject content -->
-
+         <div id="toggleDivButtons" class="main-content-main mt-2 my-ml-64 pl-2 pr-2 pt-2  pb-0">
+          <button id="openSidebarNew" class="hidden">
+            <span  class="material-symbols-outlined">
+                menu
+            </span>
+           
+          </button>
+          <button  id="closeSidebarNew"  class="">
+           
+            <span class="material-symbols-outlined">
+                menu_open
+            </span>
+          </button>
+         </div>
+         <main id="main-content"  class="main-content-main  my-ml-64  pl-2 pr-2 pb-2 ">
+          
+         </main>
          <!-- content -->
 
 

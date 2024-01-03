@@ -17,7 +17,7 @@ class CustomButton extends HTMLElement {
         <link href="${flb}" rel="stylesheet" />
         <link href="${cssF}" rel="stylesheet" />
         
-            <button type="button" class="py-2 flex items-center justify-center gap-1 w-full px-5 me-2 mb-2 text-sm font-medium ${classes}">
+            <button type="button" class="py-2 sm:text-xs flex items-center justify-center gap-1 w-full px-5 me-2 mb-2 text-sm font-medium ${classes}">
             <slot></slot>
             ${content ?? ''}
 
